@@ -1,20 +1,22 @@
 import React, { useState } from "react";
-import { useSpring, animated } from 'react-spring'
+
+import TrailText from "./Animation/TrailText";
 
 import "./TopNavBar.scss";
 
 function TopNavBar(props) {
-  const [name, setName] = useState("E");
+  const [toggleStatus, setToggleStatus] = useState(true);
 
   return (
     <div className="top_nav">
       <div className="top_nav_left">
         <div className="logo">
           <div
-            onMouseEnter={() => setName("Ebrahim Ghanbari")}
-            onMouseLeave={() => setName("E")}
+            onMouseEnter={() => setToggleStatus(false)}
+            onMouseLeave={() => setToggleStatus(true)}
           >
-            {name}
+            {"E"}
+            <TrailText text={"brahim Ghanbari"} toggle={toggleStatus} />
           </div>
         </div>
       </div>
@@ -43,5 +45,3 @@ function TopNavBar(props) {
 }
 
 export default TopNavBar;
-
-
