@@ -1,2 +1,33 @@
 @import "../../styles/variables.scss";
 
+.description {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .description_text {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    font-family: $base-font;
+    font-size: 1.3vw;
+    font-weight: 300;
+    #one {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 4vw;
+      font-weight: 700;
+      margin-bottom: 0cm;
+    }
+  }
+
+  .profile_pic {
+    height: 250px;
+    width: 250px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}

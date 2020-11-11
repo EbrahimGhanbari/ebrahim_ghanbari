@@ -11,7 +11,6 @@ import './index.scss';
 
 import TopNavBar from './components/TopNavBar';
 import Description from './components/Description/Description';
-import Contact from './components/Contact/Contact';
 
 
 
@@ -21,7 +20,6 @@ const routing = (
     <div>
         <TopNavBar />
         <Description />
-        <Contact />
     </div>
 );
 
