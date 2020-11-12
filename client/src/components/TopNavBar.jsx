@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 
 import TrailText from "./Animation/TrailText";
+import Trail from "./Animation/Trail";
 
 import "./TopNavBar.scss";
 
 function TopNavBar(props) {
   const [toggleStatus, setToggleStatus] = useState(true);
+  const [open, set] = useState(true);
 
   return (
+    <Trail open={open} xValue={-500}>
     <div className="top_nav">
       <div className="top_nav_left">
         <div className="logo">
@@ -41,6 +44,7 @@ function TopNavBar(props) {
         </ul>
       </div>
     </div>
+    </Trail>
   );
 }
 
