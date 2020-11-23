@@ -11,7 +11,7 @@ import './index.scss';
 
 import TopNavBar from './components/TopNavBar';
 import Description from './components/Description/Description';
-import TrailText from './components/Animation/TrailText';
+// import TrailText from './components/Animation/TrailText';
 
 
 

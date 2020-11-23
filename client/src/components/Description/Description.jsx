@@ -4,7 +4,7 @@ import Trail from "../Animation/Trail";
 import "./Description.scss";
 
 function Description(props) {
-  const [open, set] = useState(true);
+  const [open] = useState(true);
 
   return (
     <Trail open={open} xValue={500}>

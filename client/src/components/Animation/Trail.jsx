@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTrail, a } from "react-spring";
 
 function Trail({ open, children, xValue, ...props }) {
