@@ -21,7 +21,7 @@ const routing = (
     <div>
         <TopNavBar />
         <Description />
-        <TrailText />
+        {/* <TrailText /> */}
     </div>
 );
 

@@ -7,7 +7,7 @@ function Description(props) {
   const [open, set] = useState(true);
 
   return (
-    <Trail open={open} xValue={500}>
+    <Trail id="description_trail" open={open} xValue={500}>
       <div className="description">
         <div className="description_text">
           <div>
