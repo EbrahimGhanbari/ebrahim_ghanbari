@@ -11,16 +11,17 @@ import './index.scss';
 
 import TopNavBar from './components/TopNavBar';
 import Description from './components/Description/Description';
+import Projects from './components/Projects/Projects';
 // import TrailText from './components/Animation/TrailText';
 
 
 
 
-
 const routing = (
-    <div>
+    <div >
         <TopNavBar />
         <Description />
+        <Projects />
         {/* <TrailText /> */}
     </div>
 );

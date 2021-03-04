@@ -7,7 +7,8 @@ function Description(props) {
   const [open] = useState(true);
 
   return (
-    <Trail open={open} xValue={500}>
+    <div>
+    <Trail open={open} xValue={300}>
       <div className="description">
         <div className="description_text">
           <div>
@@ -29,6 +30,7 @@ function Description(props) {
         <div className="profile_pic"> </div>
       </div>
     </Trail>
+    </div>
   );
 }
 

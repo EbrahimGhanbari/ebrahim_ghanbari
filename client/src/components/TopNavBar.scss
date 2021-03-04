@@ -18,11 +18,12 @@
       display: flex;
       font-family: $logo-font;
       font-size: 5vw;
-      .logo_hover{
+      .logo_hover {
         display: none;
       }
     }
   }
+
   .menu {
     width: 36vw;
     font-family: $base-font;
@@ -68,4 +69,3 @@
     }
   }
 }
-
