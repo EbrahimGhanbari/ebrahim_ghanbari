@@ -7,4 +7,23 @@
     font-weight: 700;
     margin-bottom: 0cm;
   }
+  section {
+    display: flex;
+    .resume-left {
+      width: 60%;
+      background-color: burlywood;
+      height: 800px;
+    }
+    .resume-right {
+      width: 40%;
+      background-color: yellowgreen;
+      height: 800px;
+    }
+  }
+  .two-column {
+    display: flex;
+    dl {
+      padding-right: 10vw;
+    }
+  }
 }
