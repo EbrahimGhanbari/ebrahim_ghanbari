@@ -3,23 +3,23 @@ import Trail from "../Animation/Trail";
 
 import "./Description.scss";
 
-function Description(props) {
+export default function (props) {
   const [open] = useState(true);
 
   return (
     <div>
-    <Trail open={open} xValue={300}>
+      {/* <Trail open={open} xValue={300}> */}
       <div className="description">
         <div className="description_text">
           <div>
             <p id="one">Hi, I am Ebrahim</p>
             <p id="two">
-              a <b> Full-Stack / Front-End Developer</b> in beautiful Calgary
+              a <b> Full-Stack Developer</b> in beautiful Calgary
             </p>
           </div>
           <p id="three">
-            I specialize in UI/UX Design, Responsive Web Design, and Visual
-            Development.
+            I specialize in Front-End and Back-End, Single-Page Application
+            (SPA), and Visual Development.
           </p>
           <p id="four">
             I believe No-Code solutions are the future of work, allowing teams
@@ -29,9 +29,7 @@ function Description(props) {
         </div>
         <div className="profile_pic"> </div>
       </div>
-    </Trail>
+      {/* </Trail> */}
     </div>
   );
 }
-
-export default Description;

@@ -12,17 +12,18 @@ import './index.scss';
 import TopNavBar from './components/TopNavBar';
 import Description from './components/Description/Description';
 import Projects from './components/Projects/Projects';
+import Resume from './components/Resume/Resume';
 // import TrailText from './components/Animation/TrailText';
 
 
 
 
 const routing = (
-    <div >
+    <div className="index">
         <TopNavBar />
         <Description />
         <Projects />
-        {/* <TrailText /> */}
+        <Resume />
     </div>
 );
 

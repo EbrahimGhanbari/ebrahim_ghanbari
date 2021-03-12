@@ -1,8 +1,6 @@
 @import "../../styles/variables.scss";
 
 .description {
-  margin-left: 15vw;
-  margin-right: 15vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,7 +14,7 @@
     font-size: 1.3vw;
     font-weight: 300;
     #one {
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: $title-font;
       font-size: 4vw;
       font-weight: 700;
       margin-bottom: 0cm;
