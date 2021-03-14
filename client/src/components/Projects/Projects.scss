@@ -1,6 +1,24 @@
 @import "../../styles/variables.scss";
 
-.project{
-  margin-top: 100px;
-  display: none;
+.project {
+  h1 {
+    font-family: $title-font;
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 0cm;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
+    .project-1 {
+      width: 45%;
+      height: 250px;
+      background-color: hotpink;
+    }
+    .project-2 {
+      width: 45%;
+      height: 250px;
+      background-color: khaki;
+    }
+  }
 }

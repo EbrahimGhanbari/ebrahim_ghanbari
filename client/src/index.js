@@ -6,15 +6,14 @@ import * as serviceWorker from './serviceWorker';
 // styles
 import './index.scss';
 
-// components
-// import App from './App';
 
 import TopNavBar from './components/TopNavBar';
 import Description from './components/Description/Description';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact';
+import About from './components/About/About';
 import Footer from './components/Footer/Footer';
-// import TrailText from './components/Animation/TrailText';
 
 
 
@@ -25,6 +24,8 @@ const routing = (
         <Description />
         <Projects />
         <Resume />
+        <About />
+        <Contact />
 
         <Footer />
     </div>
