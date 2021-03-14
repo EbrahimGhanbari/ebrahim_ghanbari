@@ -63,6 +63,7 @@ export default function (props) {
           </div>
         </div>
       </section>
+      <button>Download Resume</button>
     </div>
   );
 }

@@ -13,6 +13,7 @@ import TopNavBar from './components/TopNavBar';
 import Description from './components/Description/Description';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
+import Footer from './components/Footer/Footer';
 // import TrailText from './components/Animation/TrailText';
 
 
@@ -24,6 +25,8 @@ const routing = (
         <Description />
         <Projects />
         <Resume />
+
+        <Footer />
     </div>
 );
 
