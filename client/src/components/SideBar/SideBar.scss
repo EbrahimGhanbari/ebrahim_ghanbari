@@ -1,0 +1,71 @@
+@import "../styles/variables.scss";
+
+.top_nav {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .top_nav_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo {
+      display: flex;
+      font-family: $logo-font;
+      font-size: 5vw;
+      .logo_hover {
+        display: none;
+      }
+    }
+  }
+
+  .menu {
+    width: 36vw;
+    font-family: $base-font;
+    font-size: 1.1vw;
+
+    ul li {
+      display: inline;
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+      width: 20%;
+      padding: 0.75rem 0;
+      margin: 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .two:hover ~ hr {
+      margin-left: 20%;
+    }
+
+    .three:hover ~ hr {
+      margin-left: 40%;
+    }
+
+    .four:hover ~ hr {
+      margin-left: 60%;
+    }
+
+    .five:hover ~ hr {
+      margin-left: 80%;
+    }
+
+    hr {
+      height: 0.25rem;
+      width: 20%;
+      margin: 0;
+      background: $underline-color;
+      border: none;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
