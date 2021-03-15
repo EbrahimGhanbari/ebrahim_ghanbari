@@ -30,22 +30,46 @@ export default function (props) {
               <a href="/">Who I am</a>
             </li>
             <li class="two">
-              <Link activeClass="active" to="resume" spy={true} smooth={true}>
+              <Link
+                className="link-pionter"
+                activeClass="active"
+                to="resume"
+                spy={true}
+                smooth={true}
+              >
                 Résumé
               </Link>
             </li>
             <li class="three">
-              <Link activeClass="active" to="project" spy={true} smooth={true}>
+              <Link
+                className="link-pionter"
+                activeClass="active"
+                to="project"
+                spy={true}
+                smooth={true}
+              >
                 Project
               </Link>
             </li>
             <li class="four">
-              <Link activeClass="active" to="about" spy={true} smooth={true}>
+              <Link
+                className="link-pionter"
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+              >
                 About
               </Link>
             </li>
             <li class="five">
-              <Link activeClass="active" to="contact" spy={true} smooth={true}>
+              <Link
+                className="link-pionter"
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+              >
                 Contact
               </Link>
             </li>
