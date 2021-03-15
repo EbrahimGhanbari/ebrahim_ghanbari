@@ -1,9 +1,21 @@
 import React from "react";
+import handleViewport from "react-in-viewport";
+import Divider from "../Utilities/Divider";
 import "./About.scss";
+
+const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
 
 export default function (props) {
   return (
     <div id="about" className="about">
+      <div>
+        {/* <div style={{ height: "100vh" }}></div> */}
+        <ViewportBlock
+          height={"0.01vh"}
+          onEnterViewport={() => console.log("about enter")}
+          onLeaveViewport={() => console.log("about leave")}
+        />
+      </div>
       <h1>About Me</h1>
       <h2>Who am I?</h2>
       <p>

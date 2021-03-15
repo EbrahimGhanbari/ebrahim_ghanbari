@@ -1,9 +1,21 @@
 import React from "react";
+import handleViewport from "react-in-viewport";
+import Divider from "../Utilities/Divider";
 import "./Resume.scss";
+
+const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
 
 export default function (props) {
   return (
     <div className="resume">
+      <div>
+        {/* <div style={{ height: "100vh" }}></div> */}
+        <ViewportBlock
+          height={"0.01vh"}
+          onEnterViewport={() => console.log("CV enter")}
+          onLeaveViewport={() => console.log("CV leave")}
+        />
+      </div>
       <h1>Resume</h1>
       <section>
         <div className="resume-left">

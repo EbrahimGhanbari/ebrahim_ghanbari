@@ -1,7 +1,6 @@
 import React from "react";
 import handleViewport from "react-in-viewport";
 import Divider from "../Utilities/Divider";
-
 import "./Projects.scss";
 
 const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
