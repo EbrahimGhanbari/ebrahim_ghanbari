@@ -1,30 +1,24 @@
 import React, { useState } from "react";
 import Trail from "../Animation/Trail";
+import handleViewport from "react-in-viewport";
+import Divider from "../Utilities/Divider";
 
 import "./Description.scss";
 
-import handleViewport from "react-in-viewport";
-
-const Block = (props) => {
-  console.log(props);
-  const { inViewport, forwardedRef } = props;
-  const color = inViewport ? "#217ac0" : "#ff9800";
-  const text = inViewport ? "In viewport" : "Not in viewport";
-  return (
-    <div className="viewport-block" ref={forwardedRef}>
-      <h3>{text}</h3>
-      <div style={{ width: "400px", height: "300px", background: color }} />
-    </div>
-  );
-};
-
-const ViewportBlock = handleViewport(Block /** options: {}, config: {} **/);
+const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
 
 export default function (props) {
   const [open] = useState(true);
 
   return (
     <div id="description">
+      <div>
+        <ViewportBlock
+          height={"0.01vh"}
+          onEnterViewport={() => console.log("description enter")}
+          onLeaveViewport={() => console.log("description leave")}
+        />
+      </div>
       {/* <Trail open={open} xValue={300}> */}
       <div className="description">
         <div className="description_text">
@@ -48,17 +42,6 @@ export default function (props) {
           <img src="cat.jpg" alt="Italian Trulli"></img>
         </div>
       </div>
-
-      <div>
-        <div style={{ height: "100vh" }}>
-          <h2>Scroll down to make component in viewport</h2>
-        </div>
-        <ViewportBlock
-          onEnterViewport={() => console.log("enter")}
-          onLeaveViewport={() => console.log("leave")}
-        />
-      </div>
-
       {/* </Trail> */}
     </div>
   );
