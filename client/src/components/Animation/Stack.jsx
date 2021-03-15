@@ -7,7 +7,7 @@ const items = range(4);
 const interp = (i) => (r) =>
   `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
 
-export default function App() {
+export default function () {
   const { radians } = useSpring({
     to: async (next) => {
       while (1) await next({ radians: 2 * Math.PI });
@@ -16,13 +16,19 @@ export default function App() {
     config: { duration: 3500 },
     reset: true,
   });
-  return items.map((i) => (
+  return (
     <div className="stack">
-      <animated.div
-        key={i}
-        className="script-bf-box"
-        style={{ transform: radians.interpolate(interp(i)) }}
-      />
+      {items.map((i) => (
+        <div>
+          <animated.div
+            key={i}
+            className="script-bf-box"
+            style={{ transform: radians.interpolate(interp(i)) }}
+          >
+            <img src="cat.jpg" alt="Italian Trulli"></img>
+          </animated.div>
+        </div>
+      ))}
     </div>
-  ));
+  );
 }
