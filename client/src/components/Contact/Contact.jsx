@@ -40,56 +40,56 @@ export default function (props) {
         alert("Message failed to send.");
       }
     });
+    setContact({ name: "", email: "", message: "" });
   }
   return (
     <div id="contact" className="contact">
       <div>
         <ViewportBlock
-          height={"0.01vh"}
+          height={"0.0vh"}
           onEnterViewport={() => console.log("COntact enter")}
           onLeaveViewport={() => console.log("COntact leave")}
         />
       </div>
-      <h1>Contact me</h1>
-      <h2>Want to work together? Drop me a line: ghanbari@ualberta.ca</h2>
-      <form id="contact-form" onSubmit={handleSubmit.bind(this)} method="POST">
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" className="form-control" onChange={onNameChange} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
-          <input
-            type="text"
-            className="form-control"
-            onChange={onEmailChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea
-            className="form-control"
-            rows="5"
-            // value={state.message}
-            onChange={onMessageChange.bind(this)}
-          />
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </form>
+      <div>
+        <h1>Contact me</h1>
+        <h2>Want to work together? Send me a message here:</h2>
+      </div>
+      <div className="contact-form">
+        <form
+          id="contact-form"
+          onSubmit={handleSubmit.bind(this)}
+          method="POST"
+        >
+          <div className="form-group">
+            <input
+              placeholder="Your Name"
+              type="text"
+              className="form-control "
+              onChange={onNameChange}
+            />
+          </div>
+          <div className="form-group">
+            <input
+              placeholder="Your Email"
+              type="text"
+              className="form-control"
+              onChange={onEmailChange}
+            />
+          </div>
+          <div className="form-group">
+            <textarea
+              placeholder="Your Message"
+              className="form-control"
+              rows="10"
+              onChange={onMessageChange}
+            />
+          </div>
+          <button type="submit" className="coolBeans submit_button">
+            Send Email
+          </button>
+        </form>
+      </div>
     </div>
-    // <div id="contact" className="contact">
-    //   <div>
-    //     {/* <div style={{ height: "100vh" }}></div> */}
-    //     <ViewportBlock
-    //       height={"0.01vh"}
-    //       onEnterViewport={() => console.log("COntact enter")}
-    //       onLeaveViewport={() => console.log("COntact leave")}
-    //     />
-    //   </div>
-    //   <h1>Contact me</h1>
-    //   <h2>Want to work together? Drop me a line: ghanbari@ualberta.ca</h2>
-    // </div>
   );
 }
