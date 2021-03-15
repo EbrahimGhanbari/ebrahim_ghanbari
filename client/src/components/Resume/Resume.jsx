@@ -63,7 +63,12 @@ export default function (props) {
           </div>
         </div>
       </section>
-      <button>Download Resume</button>
+
+      <button>
+        <a href="cv.pdf" target="_blank">
+          Download Resume
+        </a>
+      </button>
     </div>
   );
 }

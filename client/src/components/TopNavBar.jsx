@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import TrailText from "./Animation/TrailText";
 import Trail from "./Animation/Trail";
+import { Link } from "react-scroll";
 
 import "./TopNavBar.scss";
 
@@ -26,19 +27,27 @@ export default function (props) {
         <div className="menu">
           <ul>
             <li class="one">
-              <a href="#">Who I am</a>
+              <a href="/">Who I am</a>
             </li>
             <li class="two">
-              <a href="#"> Résumé</a>
+              <Link activeClass="active" to="resume" spy={true} smooth={true}>
+                Résumé
+              </Link>
             </li>
             <li class="three">
-              <a href="#">Project</a>
+              <Link activeClass="active" to="project" spy={true} smooth={true}>
+                Project
+              </Link>
             </li>
             <li class="four">
-              <a href="#">About</a>
+              <Link activeClass="active" to="about" spy={true} smooth={true}>
+                About
+              </Link>
             </li>
             <li class="five">
-              <a href="#">Contact</a>
+              <Link activeClass="active" to="contact" spy={true} smooth={true}>
+                Contact
+              </Link>
             </li>
             <hr />
           </ul>

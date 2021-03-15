@@ -8,6 +8,7 @@ import './index.scss';
 
 
 import TopNavBar from './components/TopNavBar';
+import SideBar from './components/SideBar/SideBar';
 import Description from './components/Description/Description';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
@@ -19,22 +20,21 @@ import Footer from './components/Footer/Footer';
 
 
 const routing = (
-    <div className="index">
+    <div>
         <TopNavBar />
-        <Description />
-        <Projects />
-        <Resume />
-        <About />
-        <Contact />
-
-        <Footer />
+        <SideBar />
+        <div className="index">
+            <Description />
+            <Projects />
+            <Resume />
+            <About />
+            <Contact />
+            <Footer />
+        </div>
     </div>
 );
 
 ReactDOM.render(routing, document.getElementById('root'))
 
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

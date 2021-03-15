@@ -4,7 +4,7 @@ import "./Projects.scss";
 
 export default function Projects(props) {
   return (
-    <div className="project">
+    <div id="project" className="project">
       <h1>Selected Works</h1>
       <div>
         <div className="project-1"></div>

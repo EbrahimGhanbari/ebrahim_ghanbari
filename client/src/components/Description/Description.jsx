@@ -7,7 +7,7 @@ export default function (props) {
   const [open] = useState(true);
 
   return (
-    <div>
+    <div id="description">
       {/* <Trail open={open} xValue={300}> */}
       <div className="description">
         <div className="description_text">
@@ -27,7 +27,9 @@ export default function (props) {
             and execution of products.
           </p>
         </div>
-        <div className="profile_pic"> </div>
+        <div className="profile_pic">
+          <img src="cat.jpg" alt="Italian Trulli"></img>
+        </div>
       </div>
       {/* </Trail> */}
     </div>
