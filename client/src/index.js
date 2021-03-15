@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import './index.scss';
 
 
-import TopNavBar from './components/TopNavBar';
+import TopNavBar from './components/TopNavBar/TopNavBar';
 import SideBar from './components/SideBar/SideBar';
 import Description from './components/Description/Description';
 import Projects from './components/Projects/Projects';

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import TrailText from "./Animation/TrailText";
-import Trail from "./Animation/Trail";
+import TrailText from "../Animation/TrailText";
+import Trail from "../Animation/Trail";
 import { Link } from "react-scroll";
 
 import "./TopNavBar.scss";
