@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');// fonts
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap');$base-font: "Calibre", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"); // fonts
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Volkhov:wght@700&display=swap");
+$base-font: "Calibre", sans-serif;
 $underline-color: black;
 $logo-font: "Miss Fajardose", cursive;
 
 // $light-font: 'Open Sans Condensed', sans-serif;
-$light-font: 'Assistant', sans-serif;
-$title-font: Georgia, "Times New Roman", Times, serif;
+$light-font: "Assistant", sans-serif;
+// $title-font: Georgia, "Times New Roman", Times, serif;
+$title-font: "Volkhov", serif;
+$sub-title-font: "Merienda", cursive;

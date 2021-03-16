@@ -19,8 +19,9 @@
 
   .script-bf-box {
     img {
-      width: 75px;
-      height: 350px;
+      object-fit: cover;
+      width: 100px;
+      height: 400px;
     }
     // background: black;
     margin: 5px;

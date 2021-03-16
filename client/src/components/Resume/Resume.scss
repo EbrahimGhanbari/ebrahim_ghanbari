@@ -1,23 +1,35 @@
 @import "../../styles/variables.scss";
 
 .resume {
+  margin-top: 10vh;
   h1 {
     font-family: $title-font;
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 700;
+    padding-bottom: 35px;
     margin-bottom: 0cm;
+  }
+  .resume_subtitle {
+    font-family: $sub-title-font;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  h2 {
+    padding-top: 2vh;
+  }
+
+  dt {
+    font-family: $light-font;
+    font-size: 22px;
+    padding-bottom: 10px;
   }
   section {
     display: flex;
     .resume-left {
-      width: 60%;
-      background-color: burlywood;
-      height: 800px;
+      width: 70%;
     }
     .resume-right {
-      width: 40%;
-      background-color: yellowgreen;
-      height: 800px;
+      width: 30%;
     }
   }
   .two-column {
@@ -25,5 +37,20 @@
     dl {
       padding-right: 10vw;
     }
+  }
+
+  button {
+    margin-top: 15vh;
+    width: 400px;
+  }
+  a button {
+    cursor: pointer;
+  }
+  a:hover {
+    color: white;
+  }
+
+  a button:focus {
+    outline: 0;
   }
 }

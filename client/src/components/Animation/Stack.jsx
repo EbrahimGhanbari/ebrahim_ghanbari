@@ -4,8 +4,14 @@ import range from "lodash-es/range";
 import "./Stack.scss";
 
 const items = range(4);
+const pictures = [
+  "bike_1_N.jpg",
+  "bike_2_N.jpg",
+  "bike_3_N.jpg",
+  "bike_4_N.jpg",
+];
 const interp = (i) => (r) =>
-  `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
+  `translate3d(0, ${5 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
 
 export default function () {
   const { radians } = useSpring({
@@ -25,7 +31,7 @@ export default function () {
             className="script-bf-box"
             style={{ transform: radians.interpolate(interp(i)) }}
           >
-            <img src="cat.jpg" alt="Italian Trulli"></img>
+            <img src={pictures[i]} alt="Italian Trulli"></img>
           </animated.div>
         </div>
       ))}

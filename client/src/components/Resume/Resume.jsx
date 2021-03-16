@@ -20,67 +20,63 @@ export default function (props) {
       <section>
         <div className="resume-left">
           <div>
-            <h2>Work Experience</h2>
-            <h3>Empowered Pathways (WERC)</h3>
+            <h2 className="resume_subtitle">Work Experience</h2>
+
+            <h2>Web Development Mentor - Part Time</h2>
             <dl>
-              <dt>Social Media Strategist (Internship)</dt>
-              <dt>August 2016 – December 2016</dt>
+              <dt>Lighthouse Labs</dt>
+              <dt>September 2020 – January 2021</dt>
             </dl>
-            <h3>Empowered Pathways (WERC)</h3>
+            <h2>Application Specialist </h2>
             <dl>
-              <dt>Social Media Strategist (Internship)</dt>
-              <dt>August 2016 – December 2016</dt>
+              <dt>Weatherford Canada Ltd.</dt>
+              <dt>Oct 2014 - Present</dt>
             </dl>
           </div>
           <div>
-            <h2>Skills</h2>
+            <h2 className="resume_subtitle">Skills</h2>
             <div className="two-column">
               <dl>
-                <dt>Social Media </dt>
-                <dt>August 2016</dt>
+                <dt>ReactJS </dt>
+                <dt>Javascript </dt>
+                <dt>Node JS </dt>
+                <dt>Test Driven Development </dt>
+                <dt>NOSQL: Firebase </dt>
               </dl>
               <dl>
-                <dt>Social Media</dt>
-                <dt>August 2016</dt>
+                <dt>Ruby on Rails</dt>
+                <dt>Sass</dt>
+                <dt>Bootstrap</dt>
+                <dt>Python</dt>
+                <dt>SQL: Postgres, MySQL</dt>
               </dl>
             </div>
           </div>
         </div>
         <div className="resume-right">
           <div>
-            <h2>Work Experience</h2>
-            <h3>Empowered Pathways (WERC)</h3>
+            <h2 className="resume_subtitle">Education</h2>
+            <h2>Diploma • Web Development</h2>
             <dl>
-              <dt>Social Media Strategist (Internship)</dt>
-              <dt>August 2016 – December 2016</dt>
+              <dt>Lighthouse Labs</dt>
+              <dt>2020</dt>
             </dl>
-            <h3>Empowered Pathways (WERC)</h3>
+            <h2>Msc. • Petroleum Engineering</h2>
             <dl>
-              <dt>Social Media Strategist (Internship)</dt>
-              <dt>August 2016 – December 2016</dt>
+              <dt>University of Alberta</dt>
+              <dt> 2012 - 2014</dt>
             </dl>
-          </div>
-          <div>
-            <h2>Volunteering</h2>
-            <h3>Empowered Pathways (WERC)</h3>
+            <h2>Bsc. • Petroleum Engineering</h2>
             <dl>
-              <dt>Social Media Strategist (Internship)</dt>
-              <dt>August 2016 – December 2016</dt>
-            </dl>
-            <h3>Empowered Pathways (WERC)</h3>
-            <dl>
-              <dt>Social Media Strategist (Internship)</dt>
-              <dt>August 2016 – December 2016</dt>
+              <dt>Amirkabir University of Technology</dt>
+              <dt> 2007 - 2011</dt>
             </dl>
           </div>
         </div>
       </section>
-
-      <button>
-        <a href="cv.pdf" target="_blank">
-          Download Resume
-        </a>
-      </button>
+      <a href="cv.pdf" target="_blank">
+        <button className="coolBeans">Download Resume</button>
+      </a>
     </div>
   );
 }
