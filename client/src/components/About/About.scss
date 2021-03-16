@@ -1,6 +1,18 @@
 @import "../../styles/variables.scss";
 
 .about {
+  display: flex;
+  justify-content: space-between;
+  .about_text {
+    width: 55%;
+    text-align: justify;
+    text-justify: inter-word;
+    p {
+      font-family: $light-font;
+      font-size: 22px;
+    }
+  }
+
   h1 {
     font-family: $title-font;
     font-size: 4vw;
