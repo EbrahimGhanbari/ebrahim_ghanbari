@@ -5,29 +5,41 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 5vh;
 
   .description_text {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 60%;
     font-family: $base-font;
     font-size: 1.3vw;
     font-weight: 300;
-    #one {
-      font-family: $title-font;
-      font-size: 4vw;
-      font-weight: 700;
-      margin-bottom: 0cm;
+
+    #sub_title {
+      font-family: $light-font;
+      font-size: 22px;
+      padding-bottom: 10px;
+    }
+
+    #title {
+      padding-bottom: 0px;
+    }
+
+    p {
+      font-family: $light-font;
+      font-size: 22px;
+      padding-bottom: 10px;
     }
   }
 
   .profile_pic {
     img {
-      height: 250px;
-      width: 250px;
+      height: 350px;
+      width: 350px;
       background-color: #bbb;
       border-radius: 50%;
       display: inline-block;
+      object-fit: cover;
     }
   }
 }

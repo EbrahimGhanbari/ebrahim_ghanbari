@@ -1,3 +1,5 @@
+@import "./styles/variables.scss";
+
 body {
   margin: 0;
   padding: 0;
@@ -16,4 +18,13 @@ code {
 .index {
   margin-left: 12vw;
   margin-right: 12vw;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 4.5vw;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-bottom: 0cm;
 }

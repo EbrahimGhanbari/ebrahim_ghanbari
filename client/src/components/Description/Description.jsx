@@ -14,7 +14,7 @@ export default function (props) {
     <div id="description">
       <div>
         <ViewportBlock
-          height={"0.01vh"}
+          height={"0.00vh"}
           onEnterViewport={() => console.log("description enter")}
           onLeaveViewport={() => console.log("description leave")}
         />
@@ -23,23 +23,23 @@ export default function (props) {
       <div className="description">
         <div className="description_text">
           <div>
-            <p id="one">Hi, I am Ebrahim</p>
-            <p id="two">
+            <h1 id="title">Hi, I am Ebrahim</h1>
+            <div id="sub_title">
               a <b> Full-Stack Developer</b> in beautiful Calgary
-            </p>
+            </div>
           </div>
-          <p id="three">
+          <p>
             I specialize in Front-End and Back-End, Single-Page Application
             (SPA), and Visual Development.
           </p>
-          <p id="four">
+          <p>
             I believe No-Code solutions are the future of work, allowing teams
             to work faster, and place their focus on the design, accessibility,
             and execution of products.
           </p>
         </div>
         <div className="profile_pic">
-          <img src="cat.jpg" alt="Italian Trulli"></img>
+          <img src="profile_pic.jpg" alt="Italian Trulli"></img>
         </div>
       </div>
       {/* </Trail> */}
