@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import handleViewport from "react-in-viewport";
 import Divider from "../Utilities/Divider";
+import Card from "../Animation/Card";
 import "./Projects.scss";
 
 const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
@@ -26,6 +27,11 @@ export default function (props) {
             <img src="cnergreen.png" alt="Italian Trulli" />
             <h2 className="box_text">TEXT TEXT</h2>
           </div>
+          <div className="box project_2">
+            <img src="cnergreen.png" alt="Italian Trulli" />
+            <h2 className="box_text">TEXT TEXT</h2>
+          </div>
+          <Card />
         </div>
       </div>
     </div>

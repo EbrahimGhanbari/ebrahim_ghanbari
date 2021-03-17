@@ -3,11 +3,14 @@
 .project {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   .box {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5vh;
+
     width: 550px;
     height: 350px;
     background-color: khaki;
