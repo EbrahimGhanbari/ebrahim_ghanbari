@@ -5,7 +5,6 @@ import { FaShoppingCart } from "react-icons/fa";
 import { AiOutlineSchedule } from "react-icons/ai";
 
 import "./Card.scss";
-import { format } from "morgan";
 
 export default function (props) {
   const [flipped, set] = useState(false);
