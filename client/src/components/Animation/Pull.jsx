@@ -2,7 +2,6 @@ import React from "react";
 import clamp from "lodash-es/clamp";
 import { useSpring, animated } from "react-spring";
 import { useGesture } from "react-with-gesture";
-import "./styles.css";
 
 export default function () {
   const [{ xy }, set] = useSpring(() => ({ xy: [0, 0] }));

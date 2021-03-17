@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Trail from "../Animation/Trail";
+import Pull from "../Animation/Pull";
 import handleViewport from "react-in-viewport";
 import Divider from "../Utilities/Divider";
 
