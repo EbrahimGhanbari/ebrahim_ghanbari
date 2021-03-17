@@ -1,24 +1,32 @@
 @import "../../styles/variables.scss";
 
 .project {
-  h1 {
-    font-family: $title-font;
-    font-size: 4vw;
-    font-weight: 700;
-    margin-bottom: 0cm;
-  }
-  div {
+  display: flex;
+  justify-content: space-around;
+
+  .box {
     display: flex;
-    justify-content: space-around;
-    .project-1 {
-      width: 45%;
-      height: 250px;
-      background-color: hotpink;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 350px;
+    background-color: khaki;
+    border-radius: 20px;
+
+    img {
+      height: 100px;
     }
-    .project-2 {
-      width: 45%;
-      height: 250px;
-      background-color: khaki;
+    .box_text {
+      position: absolute;
+      visibility: hidden;
     }
   }
+}
+
+.box:hover img {
+  opacity: 0.2;
+}
+
+.box:hover .box_text {
+  visibility: visible;
 }
