@@ -2,6 +2,7 @@ import React from "react";
 import clamp from "lodash-es/clamp";
 import { useSpring, animated } from "react-spring";
 import { useGesture } from "react-with-gesture";
+import "./Pull.scss";
 
 export default function () {
   const [{ xy }, set] = useSpring(() => ({ xy: [0, 0] }));
@@ -14,6 +15,7 @@ export default function () {
   });
   return (
     <animated.div
+      className="pull"
       {...bind()}
       style={{
         transform: xy.interpolate((x, y) => `translate3d(${x}px,${y}px,0)`),

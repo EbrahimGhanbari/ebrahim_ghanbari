@@ -1,0 +1,15 @@
+.pull {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-image: url("./profile_pic.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  cursor: -webkit-grab;
+}
+
+.pull:active {
+  cursor: -webkit-grabbing;
+}

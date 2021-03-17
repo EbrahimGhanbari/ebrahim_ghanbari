@@ -38,11 +38,12 @@ export default function (props) {
             and execution of products.
           </p>
         </div>
-        <div className="profile_pic">
-          <img src="profile_pic.jpg" alt="Italian Trulli"></img>
-        </div>
+
+        {/* <div className="profile_pic"> */}
+        {/* <img src="profile_pic.jpg" alt="Italian Trulli"></img> */}
+        <Pull></Pull>
+        {/* </div> */}
       </div>
-      {/* </Trail> */}
     </div>
   );
 }
