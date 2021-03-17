@@ -1,20 +1,49 @@
+@import "../../styles/variables.scss";
 .c {
-  //   position: absolute;
+  position: absolute;
   width: 550px;
   height: 350px;
+  border-radius: 10px;
   cursor: pointer;
   will-change: transform, opacity;
 }
 
-.front,
 .back {
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.back {
-  background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
+.icon_1 {
+  width: 50%;
+  height: 50%;
+}
+
+.project_1 {
+  background-color: #fad0c9ff;
+}
+
+.project_2 {
+  background-color: #6e6e6dff;
+}
+
+.project_3 {
+  background-color: #00203fff;
+}
+
+.project_4 {
+  background-color: #adefd1ff;
 }
 
 .front {
-  background-image: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80&auto=format&fit=crop);
+  border: 3px solid black;
+  section {
+    padding: 20px;
+
+    p {
+      font-family: $light-font;
+      font-size: 22px;
+      padding-bottom: 10px;
+    }
+  }
 }
