@@ -1,6 +1,10 @@
 @import "../../styles/variables.scss";
 
 .sidebar {
+  font-family: $nav-font;
+  font-weight: 400;
+  font-size: 18px;
+  color: #d1d1d1;
   // visibility: hidden;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 50px; /* Set the width of the sidebar */
@@ -8,15 +12,16 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: yellow; /* Black */
+  // background-color: yellow; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding-top: 5%;
+  padding-left: 0.7%;
   div {
     height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   a {
     transform: rotate(-90deg);
@@ -24,6 +29,16 @@
   }
 }
 
-.link-pionter {
+.link-pointer {
   cursor: pointer;
+  .sidebar_border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 40%;
+    border: solid black 3px;
+    color: black;
+  }
 }

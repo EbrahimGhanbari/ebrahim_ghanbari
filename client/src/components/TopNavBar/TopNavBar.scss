@@ -26,8 +26,9 @@
 
   .menu {
     width: 36vw;
-    font-family: $base-font;
-    font-size: 1.1vw;
+    font-family: $nav-font;
+    font-weight: 400;
+    font-size: 18px;
 
     ul li {
       display: inline;
