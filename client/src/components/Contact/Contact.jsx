@@ -44,13 +44,13 @@ export default function (props) {
   }
   return (
     <div id="contact" className="contact">
-      <div>
+      {/* <div>
         <ViewportBlock
           height={"0.0vh"}
           onEnterViewport={() => console.log("COntact enter")}
           onLeaveViewport={() => console.log("COntact leave")}
         />
-      </div>
+      </div> */}
       <div>
         <h1>Contact me</h1>
         <h2>Want to work together? Send me a message here:</h2>

@@ -12,13 +12,13 @@ export default function (props) {
 
   return (
     <div id="description">
-      <div>
+      {/* <div>
         <ViewportBlock
           height={"0.00vh"}
           onEnterViewport={() => console.log("description enter")}
           onLeaveViewport={() => console.log("description leave")}
         />
-      </div>
+      </div> */}
       {/* <Trail open={open} xValue={300}> */}
       <div className="description">
         <div className="description_text">

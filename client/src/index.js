@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Route, Link, Switch, BrowserRouter as Router } from 'react-router-dom';
+import handleViewport from "react-in-viewport";
 import * as serviceWorker from './serviceWorker';
 
 // styles
@@ -15,7 +15,10 @@ import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import Divider from "./components/Utilities/Divider";
 
+
+const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
 
 
 
@@ -24,6 +27,11 @@ const routing = (
         <TopNavBar />
         <SideBar />
         <div className="index">
+            <ViewportBlock
+                height={"0.01vh"}
+                onEnterViewport={() => console.log("index enter")}
+                onLeaveViewport={() => console.log("index leave")}
+            />
             <Description />
             <Projects />
             <Resume />

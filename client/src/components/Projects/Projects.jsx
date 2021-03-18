@@ -43,13 +43,13 @@ const projects = {
 export default function (props) {
   return (
     <div>
-      <div>
+      {/* <div>
         <ViewportBlock
           height={"0.01vh"}
           onEnterViewport={() => console.log("project enter")}
           onLeaveViewport={() => console.log("project leave")}
         />
-      </div>
+      </div> */}
       <div id="project">
         <h1>Selected Works</h1>
         <div className="project">
