@@ -25,9 +25,8 @@ export default function () {
   return (
     <div className="stack">
       {items.map((i) => (
-        <div>
+        <div key={i}>
           <animated.div
-            key={i}
             className="script-bf-box"
             style={{ transform: radians.interpolate(interp(i)) }}
           >

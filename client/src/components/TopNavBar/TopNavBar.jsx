@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import TrailText from "../Animation/TrailText";
 import Trail from "../Animation/Trail";
 import { Link } from "react-scroll";
+import { v4 as uuidv4 } from "uuid";
 
 import "./TopNavBar.scss";
 
@@ -26,10 +27,10 @@ export default function (props) {
         </div>
         <div className="menu">
           <ul>
-            <li class="one">
+            <li className="one">
               <a href="/">Who I am</a>
             </li>
-            <li class="two">
+            <li className="two">
               <Link
                 className="link-pionter"
                 activeClass="active"
@@ -40,7 +41,7 @@ export default function (props) {
                 Résumé
               </Link>
             </li>
-            <li class="three">
+            <li className="three">
               <Link
                 className="link-pionter"
                 activeClass="active"
@@ -51,7 +52,7 @@ export default function (props) {
                 Project
               </Link>
             </li>
-            <li class="four">
+            <li className="four">
               <Link
                 className="link-pionter"
                 activeClass="active"
@@ -62,7 +63,7 @@ export default function (props) {
                 About
               </Link>
             </li>
-            <li class="five">
+            <li className="five">
               <Link
                 className="link-pionter"
                 activeClass="active"
