@@ -1,10 +1,9 @@
 import React from "react";
-import handleViewport from "react-in-viewport";
-import Divider from "../Utilities/Divider";
+import Transition from "../Animation/Transition";
 import Card from "../Animation/Card";
+
 import "./Projects.scss";
 
-const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
 const projects = {
   cnergreen: {
     class: "project_1",
@@ -43,28 +42,13 @@ const projects = {
 export default function (props) {
   return (
     <div>
-      {/* <div>
-        <ViewportBlock
-          height={"0.01vh"}
-          onEnterViewport={() => console.log("project enter")}
-          onLeaveViewport={() => console.log("project leave")}
-        />
-      </div> */}
       <div id="project">
-        <h1>Selected Works</h1>
+        <h1>
+          <div style={{ display: "flex", height: "80px" }}>
+            <Transition text={"S.e.l.e.c.t.e.d W.o.r.k.s"} />
+          </div>
+        </h1>
         <div className="project">
-          {/* <div className="box project_1">
-            <img src="cnergreen.png" alt="Italian Trulli" />
-            <h2 className="box_text">TEXT TEXT</h2>
-          </div>
-          <div className="box project_2">
-            <img src="cnergreen.png" alt="Italian Trulli" />
-            <h2 className="box_text">TEXT TEXT</h2>
-          </div>
-          <div className="box project_2">
-            <img src="cnergreen.png" alt="Italian Trulli" />
-            <h2 className="box_text">TEXT TEXT</h2>
-          </div> */}
           <div className="box">
             <Card project={projects.cnergreen} />
           </div>

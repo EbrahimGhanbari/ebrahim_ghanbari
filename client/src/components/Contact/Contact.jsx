@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import handleViewport from "react-in-viewport";
-import Divider from "../Utilities/Divider";
+import Transition from "../Animation/Transition";
 import axios from "axios";
 import "./Contact.scss";
-
-const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
 
 export default function (props) {
   const [contact, setContact] = useState({
@@ -44,15 +41,12 @@ export default function (props) {
   }
   return (
     <div id="contact" className="contact">
-      {/* <div>
-        <ViewportBlock
-          height={"0.0vh"}
-          onEnterViewport={() => console.log("COntact enter")}
-          onLeaveViewport={() => console.log("COntact leave")}
-        />
-      </div> */}
       <div>
-        <h1>Contact me</h1>
+        <h1>
+          <div style={{ display: "flex", height: "80px" }}>
+            <Transition text={"C.o.n.t.a.c.t m.e"} />
+          </div>
+        </h1>
         <h2>Want to work together? Send me a message here:</h2>
       </div>
       <div className="contact-form">

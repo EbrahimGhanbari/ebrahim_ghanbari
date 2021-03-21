@@ -1,21 +1,17 @@
 import React from "react";
-import handleViewport from "react-in-viewport";
-import Divider from "../Utilities/Divider";
-import "./Resume.scss";
+import Transition from "../Animation/Transition";
 
-const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
+import "./Resume.scss";
 
 export default function (props) {
   return (
     <div className="resume">
-      {/* <div>
-        <ViewportBlock
-          height={"0.01vh"}
-          onEnterViewport={() => console.log("CV enter")}
-          onLeaveViewport={() => console.log("CV leave")}
-        />
-      </div> */}
-      <h1>Resume</h1>
+      <h1>
+        {" "}
+        <div style={{ display: "flex", height: "80px" }}>
+          <Transition text={"R.e.s.u.m.e"} />
+        </div>
+      </h1>
       <section>
         <div className="resume-left">
           <div>

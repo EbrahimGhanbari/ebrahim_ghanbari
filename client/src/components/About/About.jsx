@@ -1,24 +1,19 @@
 import React from "react";
-import handleViewport from "react-in-viewport";
-import Divider from "../Utilities/Divider";
 import Stack from "../Animation/Stack";
-import "./About.scss";
+import Transition from "../Animation/Transition";
 
-const ViewportBlock = handleViewport(Divider);
+import "./About.scss";
 
 export default function (props) {
   return (
     <div>
-      {/* <div>
-        <ViewportBlock
-          height={"0.0vh"}
-          onEnterViewport={() => console.log("about enter")}
-          onLeaveViewport={() => console.log("about leave")}
-        />
-      </div> */}
       <div id="about" className="about">
         <div className="about_text">
-          <h1>About Me</h1>
+          <h1>
+            <div style={{ display: "flex", height: "80px" }}>
+              <Transition text={"A.b.o.u.t m.e"} />
+            </div>
+          </h1>
           <h2>Who am I?</h2>
           <p>
             My name is Marco Cornacchia, and I am a Product Designer and Visual
