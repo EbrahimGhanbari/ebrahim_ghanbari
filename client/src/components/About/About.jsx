@@ -9,13 +9,13 @@ const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
 export default function (props) {
   return (
     <div>
-      <div>
+      {/* <div>
         <ViewportBlock
           height={"0.0vh"}
           onEnterViewport={() => console.log("about enter")}
           onLeaveViewport={() => console.log("about leave")}
         />
-      </div>
+      </div> */}
       <div id="about" className="about">
         <div className="about_text">
           <h1>About Me</h1>

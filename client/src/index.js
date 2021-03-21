@@ -33,10 +33,31 @@ const routing = (
                 onLeaveViewport={() => console.log("index leave")}
             />
             <Description />
+            <ViewportBlock
+                height={"0.01vh"}
+                onEnterViewport={() => console.log("project enter")}
+                onLeaveViewport={() => console.log("Description leave")}
+            />
             <Projects />
+
             <Resume />
+            <ViewportBlock
+                height={"0.01vh"}
+                onEnterViewport={() => console.log("resume enter")}
+                onLeaveViewport={() => console.log("resume leave")}
+            />
             <About />
+            <ViewportBlock
+                height={"0.01vh"}
+                onEnterViewport={() => console.log("about enter")}
+                onLeaveViewport={() => console.log("about leave")}
+            />
             <Contact />
+            <ViewportBlock
+                height={"0.01vh"}
+                onEnterViewport={() => console.log("contact enter")}
+                onLeaveViewport={() => console.log("contact leave")}
+            />
             <Footer />
         </div>
     </div>
