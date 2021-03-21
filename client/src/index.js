@@ -6,7 +6,6 @@ import * as serviceWorker from './serviceWorker';
 // styles
 import './index.scss';
 
-
 import TopNavBar from './components/TopNavBar/TopNavBar';
 import SideBar from './components/SideBar/SideBar';
 import Description from './components/Description/Description';
@@ -17,13 +16,11 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Divider from "./components/Utilities/Divider";
 
-
 const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
-
-
 
 const routing = (
     <div>
+
         <TopNavBar />
         <SideBar />
         <div className="index">
@@ -39,7 +36,6 @@ const routing = (
                 onLeaveViewport={() => console.log("Description leave")}
             />
             <Projects />
-
             <Resume />
             <ViewportBlock
                 height={"0.01vh"}

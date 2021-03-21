@@ -4,7 +4,7 @@ import Divider from "../Utilities/Divider";
 import Stack from "../Animation/Stack";
 import "./About.scss";
 
-const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
+const ViewportBlock = handleViewport(Divider);
 
 export default function (props) {
   return (
