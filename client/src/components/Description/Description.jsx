@@ -1,26 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Pull from "../Animation/Pull";
-import handleViewport from "react-in-viewport";
-import Divider from "../Utilities/Divider";
 import Transition from "../Animation/TransitionText";
 
 import "./Description.scss";
 
-const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
-
 export default function (props) {
-  const [open] = useState(true);
-
   return (
     <div id="description">
-      {/* <div>
-        <ViewportBlock
-          height={"0.00vh"}
-          onEnterViewport={() => console.log("description enter")}
-          onLeaveViewport={() => console.log("description leave")}
-        />
-      </div> */}
-      {/* <Trail open={open} xValue={300}> */}
       <div className="description">
         <div className="description_text">
           <div>
@@ -44,11 +30,7 @@ export default function (props) {
             and execution of products.
           </p>
         </div>
-
-        {/* <div className="profile_pic"> */}
-        {/* <img src="profile_pic.jpg" alt="Italian Trulli"></img> */}
         <Pull></Pull>
-        {/* </div> */}
       </div>
     </div>
   );
