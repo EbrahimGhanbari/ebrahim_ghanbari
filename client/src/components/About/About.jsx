@@ -31,15 +31,15 @@ export default function (props) {
           <h2>What am I passionate about?</h2>
           <p>
             As a No-Code enthusiast, I believe that lowering the barrier of
-            entry into development will empower more people to create
-            ✨beautiful experiences✨ Because of this, I am always on the
-            lookout for No-Code solutions (like Webflow—which this site is
-            entirely built on) that help everyone work faster and place the
-            focus on the design, accessibility, and execution of products. I am
-            also extremely passionate about bridging the gap between designers &
-            developers in order to create the best possible products. But most
-            importantly, I love working with diverse people who want to make the
-            🌎 a little better before we’re all DEAD
+            entry into development will empower more people to create beautiful
+            experiences Because of this, I am always on the lookout for No-Code
+            solutions (like Webflow—which this site is entirely built on) that
+            help everyone work faster and place the focus on the design,
+            accessibility, and execution of products. I am also extremely
+            passionate about bridging the gap between designers & developers in
+            order to create the best possible products. But most importantly, I
+            love working with diverse people who want to make the a little
+            better before we’re all DEAD
           </p>
         </div>
         <Stack />
