@@ -36,6 +36,7 @@ export default function (props) {
       {(item) => ({ x, opacity, index }) => (
         <animated.label
           className="box"
+          key={item}
           style={{
             opacity,
             transform: x.interpolate((x) => `translate3d(${x}%,0,0)`),
