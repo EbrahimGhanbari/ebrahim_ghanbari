@@ -8,10 +8,10 @@ import "./TopNavBar.scss";
 
 export default function (props) {
   const [toggleStatus, setToggleStatus] = useState(true);
-  const [open, set] = useState(true);
+  // const [open, set] = useState(true);
 
   return (
-    <Trail open={open} xValue={-500}>
+    <Trail open={true} xValue={-500}>
       <div className="top_nav">
         <div className="top_nav_left">
           <div className="logo">
