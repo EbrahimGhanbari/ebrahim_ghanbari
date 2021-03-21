@@ -1,6 +1,6 @@
 import React from "react";
 import Pull from "../Animation/Pull";
-import Transition from "../Animation/TransitionText";
+import Transition from "../Animation/Transition";
 
 import "./Description.scss";
 
