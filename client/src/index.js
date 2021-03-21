@@ -36,7 +36,7 @@ const routing = (
                 onLeaveViewport={() => console.log("Description leave")}
             />
             <Projects />
-            <Resume />
+            {/* <Resume />
             <ViewportBlock
                 height={"0.01vh"}
                 onEnterViewport={() => console.log("resume enter")}
@@ -54,7 +54,7 @@ const routing = (
                 onEnterViewport={() => console.log("contact enter")}
                 onLeaveViewport={() => console.log("contact leave")}
             />
-            <Footer />
+            <Footer /> */}
         </div>
     </div>
 );

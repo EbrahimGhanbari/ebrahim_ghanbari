@@ -9,6 +9,11 @@ export default function (props) {
     items = props.text.split("");
   }
 
+  let foo = [];
+  items.forEach((item, index) => {
+    foo = [...foo, { key: index, text: item }];
+  });
+
   const [state, setState] = useState({
     toggle: props.toggle,
     items,
@@ -28,7 +33,7 @@ export default function (props) {
       from={{ opacity: 0, x: 100 }}
       to={{ opacity: state.toggle ? 0 : 0.8, x: state.toggle ? 0 : 100 }}
     >
-      {(item) => ({ x, opacity }) => (
+      {(item) => ({ x, opacity, index }) => (
         <animated.label
           className="box"
           style={{

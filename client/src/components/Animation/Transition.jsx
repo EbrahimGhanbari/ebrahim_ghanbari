@@ -9,7 +9,6 @@ export default function (props) {
     foo = [...foo, { key: index, text: item }];
   });
 
-  console.log(foo);
   const [items, setList] = useState({});
 
   setTimeout(() => {
