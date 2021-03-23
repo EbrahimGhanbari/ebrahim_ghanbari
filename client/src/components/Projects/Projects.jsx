@@ -42,7 +42,7 @@ const projects = {
 
 export default function (props) {
   return (
-    <Trail open={true} xValue={500} direction={"horizontal"}>
+    <Trail open={true} xValue={500}>
       <div>
         <div id="project">
           <h1>

@@ -13,12 +13,12 @@ export default function (props) {
 
   setTimeout(() => {
     setList(foo);
-  }, 2000);
+  }, 800);
 
   const transitions = useTransition(items, (item) => item.key, {
     from: { transform: "translate3d(0,-4000px,0)" },
     enter: { transform: "translate3d(0,0px,0)" },
-    trail: 150,
+    trail: 100,
   });
 
   return transitions.map(({ item, props, key }) => (

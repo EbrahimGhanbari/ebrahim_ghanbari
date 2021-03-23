@@ -26,6 +26,7 @@ export default function (props) {
 
   return (
     <Trail
+      key="s"
       native
       reverse={state.toggle}
       initial={null}
@@ -36,7 +37,7 @@ export default function (props) {
       {(item) => ({ x, opacity, index }) => (
         <animated.label
           className="box"
-          key={item}
+          key={`${item}-1`}
           style={{
             opacity,
             transform: x.interpolate((x) => `translate3d(${x}%,0,0)`),
