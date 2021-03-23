@@ -1,59 +1,69 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import handleViewport from "react-in-viewport";
 
 import TopNavBar from './components/TopNavBar/TopNavBar';
-import SideBar from './components/SideBar/SideBar';
 import Description from './components/Description/Description';
 import Projects from './components/Projects/Projects';
-// import Resume from './components/Resume/Resume';
+// import SideBar from './components/SideBar/SideBar';
+import Resume from './components/Resume/Resume';
 // import Contact from './components/Contact/Contact';
 // import About from './components/About/About';
 // import Footer from './components/Footer/Footer';
 import Divider from "./components/Utilities/Divider";
 
-const ViewportBlock = handleViewport(Divider /** options: {}, config: {} **/);
+const ViewportBlock = handleViewport(Divider);
 
 const MyComponents = {
-  Divider: function () { return (<Divider height={"100vh"} />) },
+  Divider: function ({ func = function () { }, height }) {
+    return (<ViewportBlock
+      height={height}
+      onEnterViewport={() => { func() }}
+      onLeaveViewport={() => { }}
+    />)
+  },
   DescriptionBundle: function () {
-    return (<>  <ViewportBlock
-      height={"0vh"}
-      onEnterViewport={() => console.log("index enter")}
-      onLeaveViewport={() => console.log("index leave")}
-    />
-      <Description /></>)
+    return (<>
+      <Description />
+    </>)
+  },
+  ProjectBundle: function () {
+    return (
+      <>
+        <Projects />
+      </>)
   }
+
 }
 
 export default function (props) {
   const [display, setDisplay] = useState({});
+  const time = 1500;
 
+  useEffect(() => {
+    setTimeout(function () {
+      setDisplay({ desc: true, topNavbar: true })
+    }, time);
+  }, [])
 
-  setTimeout(function () {
-    setDisplay({ desc: true, topNavbar: true })
-  }, 1000);
+  function showProject() {
+    setDisplay({ ...display, project: true });
+  }
 
-
+  function showResume() {
+    setDisplay({ ...display, resume: true });
+  }
 
   return (
     <div>
-      {display.topNavbar ? <TopNavBar /> : <MyComponents.Divider />}
+      {display.topNavbar ? <TopNavBar /> : <MyComponents.Divider height={"100vh"} />}
       <div className="index">
-        {display.desc ? <MyComponents.DescriptionBundle /> : <MyComponents.Divider />}
-        {/* 
-        <ViewportBlock
-          height={"0.01vh"}
-          onEnterViewport={() => console.log("project enter")}
-          onLeaveViewport={() => console.log("Description leave")}
-        /> */}
-        {/* <Projects /> */}
+        {display.desc ? <><Description /> <MyComponents.Divider height={"60vh"} /> </>
+          : <MyComponents.Divider height={"100vh"} />}
+        {display.project ? <><Projects /> <MyComponents.Divider height={"120vh"} /> </> : <> <MyComponents.Divider height={"60vh"} /> <MyComponents.Divider height={"100vh"} func={showProject} /> </>}
+        {display.resume ? <Resume /> : <> <MyComponents.Divider height={"60vh"} /> <MyComponents.Divider height={"100vh"} func={showResume} /> </>}
+
         {/* <SideBar /> */}
-        {/* <Resume />
-        <ViewportBlock
-            height={"0.01vh"}
-            onEnterViewport={() => console.log("resume enter")}
-            onLeaveViewport={() => console.log("resume leave")}
-        />
+        {/* 
         <About />
         <ViewportBlock
             height={"0.01vh"}

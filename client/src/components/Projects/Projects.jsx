@@ -1,6 +1,7 @@
 import React from "react";
 import Transition from "../Animation/Transition";
 import Card from "../Animation/Card";
+import Trail from "../Animation/Trail";
 
 import "./Projects.scss";
 
@@ -41,28 +42,30 @@ const projects = {
 
 export default function (props) {
   return (
-    <div>
-      <div id="project">
-        <h1>
-          <div style={{ display: "flex", height: "80px" }}>
-            <Transition text={"S.e.l.e.c.t.e.d W.o.r.k.s"} />
-          </div>
-        </h1>
-        <div className="project">
-          <div className="box">
-            <Card project={projects.cnergreen} />
-          </div>
-          <div className="box">
-            <Card project={projects.wing} />
-          </div>
-          <div className="box">
-            <Card project={projects.interview} />
-          </div>
-          <div className="box">
-            <Card project={projects.jungle} />
+    <Trail open={true} xValue={500} direction={"horizontal"}>
+      <div>
+        <div id="project">
+          <h1>
+            <div style={{ display: "flex", height: "80px" }}>
+              <Transition text={"S.e.l.e.c.t.e.d W.o.r.k.s"} />
+            </div>
+          </h1>
+          <div className="project">
+            <div className="box">
+              <Card project={projects.cnergreen} />
+            </div>
+            <div className="box">
+              <Card project={projects.wing} />
+            </div>
+            <div className="box">
+              <Card project={projects.interview} />
+            </div>
+            <div className="box">
+              <Card project={projects.jungle} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Trail>
   );
 }
