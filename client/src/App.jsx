@@ -34,6 +34,18 @@ export default function (props) {
     }, time);
   }, []);
 
+  // const show = {
+  //   project: function () {
+  //     setDisplay({ ...display, project: true });
+  //   },
+  //   resume: function () {
+  //     setDisplay({ ...display, resume: true });
+  //   },
+  //   about: function () {
+  //     setDisplay({ ...display, about: true });
+  //   },
+  // };
+
   function showProject() {
     setDisplay({ ...display, project: true });
   }
@@ -50,14 +62,14 @@ export default function (props) {
     <div>
       {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
       <div className="index">
-        {/* {display.desc ? (
+        {display.desc ? (
           <>
             <Description /> <DividerBlock height={"60vh"} />
           </>
         ) : (
           <DividerBlock height={"100vh"} />
         )}
-        {display.project ? (
+        {/* {display.project ? (
           <>
             <Projects /> <DividerBlock height={"120vh"} />
           </>

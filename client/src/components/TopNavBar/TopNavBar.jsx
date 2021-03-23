@@ -14,7 +14,7 @@ export default function (props) {
     <Trail open={true} xValue={-500}>
       <div className="top_nav">
         <div className="top_nav_left">
-          <div className="logo">
+          <a href="/" className="logo">
             <div
               onMouseEnter={() => setToggleStatus(false)}
               onMouseLeave={() => setToggleStatus(true)}
@@ -22,7 +22,7 @@ export default function (props) {
               {"E"}
               <TrailText text={"brahim Ghanbari"} toggle={toggleStatus} />
             </div>
-          </div>
+          </a>
         </div>
         <div className="menu">
           <ul>

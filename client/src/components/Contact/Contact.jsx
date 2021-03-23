@@ -46,7 +46,8 @@ export default function (props) {
         <div>
           <h1>
             <div style={{ display: "flex", height: "80px" }}>
-              <Transition text={"C.o.n.t.a.c.t m.e"} />
+              Contact me
+              {/* <Transition text={"Contact me"} /> */}
             </div>
           </h1>
           <h2>Want to work together? Send me a message here:</h2>
