@@ -1,20 +1,24 @@
 @import "../../styles/variables.scss";
 
 .footer {
+  margin-bottom: 25vh;
+
   hr {
     height: 1.5px;
     background-color: #4a4948;
     border-radius: 500px;
   }
   div {
+    margin-top: 1.5vh;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
+
     display: flex;
     justify-content: space-between;
   }
 
   .footer-logo {
     font-family: $logo-font;
-    font-size: 2vw;
+    font-size: 3.5vw;
   }
 }

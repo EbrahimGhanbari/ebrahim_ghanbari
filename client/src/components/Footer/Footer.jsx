@@ -12,10 +12,24 @@ export default function (props) {
       <hr />
       <div>
         <div>
-          <UseAnimations animation={github} />
-          <UseAnimations animation={facebook} />
-          <UseAnimations animation={instagram} />
-          <UseAnimations animation={linkedin} />
+          <a href="https://github.com/EbrahimGhanbari" target="_blank">
+            <UseAnimations size={44} animation={github} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ebrahim-ghanbari/"
+            target="_blank"
+          >
+            <UseAnimations size={44} animation={linkedin} />
+          </a>
+          <a
+            href="https://www.facebook.com/ebrahim.ghanbari1989"
+            target="_blank"
+          >
+            <UseAnimations size={44} animation={facebook} />
+          </a>
+          <a href="https://www.instagram.com/ebrahimg11/" target="_blank">
+            <UseAnimations size={44} animation={instagram} />
+          </a>
         </div>
         <div className="footer-logo">E</div>
       </div>
