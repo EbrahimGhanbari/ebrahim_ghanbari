@@ -42,50 +42,54 @@ export default function (props) {
   }
   return (
     <Trail open={true} xValue={500}>
-      <div id="contact" className="contact">
+      <div id="contact">
         <div>
           <h1>
-            <div style={{ display: "flex", height: "80px" }}>
-              Contact me
-              {/* <Transition text={"Contact me"} /> */}
-            </div>
+            <div style={{ display: "flex", height: "80px" }}>Contact me</div>
           </h1>
-          <h2>Want to work together? Send me a message here:</h2>
+          <div className="contact_subtitle">
+            Want to work together? Send me a message here:
+          </div>
         </div>
-        <div className="contact-form">
-          <form
-            id="contact-form"
-            onSubmit={handleSubmit.bind(this)}
-            method="POST"
-          >
-            <div className="form-group">
-              <input
-                placeholder="Your Name"
-                type="text"
-                className="form-control "
-                onChange={onNameChange}
-              />
-            </div>
-            <div className="form-group">
-              <input
-                placeholder="Your Email"
-                type="text"
-                className="form-control"
-                onChange={onEmailChange}
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                placeholder="Your Message"
-                className="form-control"
-                rows="10"
-                onChange={onMessageChange}
-              />
-            </div>
-            <button type="submit" className="coolBeans submit_button">
-              Send Email
-            </button>
-          </form>
+        <div className="contact">
+          <div className="contact_left">
+            <img src="baby_me.jpg" alt="baby me" />
+          </div>
+          <div className="contact_right">
+            <form
+              id="contact-form"
+              onSubmit={handleSubmit.bind(this)}
+              method="POST"
+            >
+              <div className="form-group">
+                <input
+                  placeholder="Your Name"
+                  type="text"
+                  className="form-control "
+                  onChange={onNameChange}
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  placeholder="Your Email"
+                  type="text"
+                  className="form-control"
+                  onChange={onEmailChange}
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  placeholder="Your Message"
+                  className="form-control"
+                  rows="10"
+                  onChange={onMessageChange}
+                />
+              </div>
+              <button type="submit" className="coolBeans submit_button">
+                Send Email
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </Trail>

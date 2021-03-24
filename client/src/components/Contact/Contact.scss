@@ -1,31 +1,39 @@
 @import "../../styles/variables.scss";
 
+.contact_subtitle {
+  font-family: $title-font;
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 15vh;
+}
+
 .contact {
-  div h1 {
-    font-family: $title-font;
-    font-size: 4vw;
-    font-weight: 700;
-    margin-bottom: 0cm;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  .contact_left {
+    img {
+      padding-top: 5vh;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
   }
-  div h2 {
-    font-family: $title-font;
-    font-size: 2vw;
-    font-weight: 700;
-    margin-bottom: 40px;
-  }
-  
-  .contact-form{
-    display: flex; 
+
+  .contact_right {
+    width: 50%;
+    display: flex;
     justify-content: flex-end;
 
-    form{
-      width: 50%;
-      display: flex; 
+    form {
+      width: 100%;
+      display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    
-    input{
+
+    input {
       font-family: $light-font;
       font-size: 22px;
       border-radius: 5px;
@@ -38,7 +46,7 @@
       background-color: #f5f5f5;
       border: none;
     }
-    
+
     textarea {
       padding-top: 20px;
       padding-bottom: 10px;
@@ -53,16 +61,16 @@
       border: none;
       overflow-y: scroll;
       resize: none;
-        }
-      }
-  .submit_button{
+    }
+  }
+  .submit_button {
     margin-left: 25px;
     margin-right: 25px;
     width: 100%;
   }
 }
 
-.coolBeans{
+.coolBeans {
   font-family: $light-font;
   font-weight: 700;
   font-size: 28px;
@@ -70,18 +78,17 @@
   border-radius: 2rem;
   color: black;
   background-color: white;
-  overflow :hidden;
-  padding :1rem 2rem;
-  position :relative;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
   text-decoration: none;
-  transition: .2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
   will-change: transform;
-  z-index :0;
+  z-index: 0;
 }
-.coolBeans::after{
-
+.coolBeans::after {
   background-color: black;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -89,18 +96,18 @@
   left: 0;
   top: 0;
   transform: translate(-100%, 0) rotate(10deg);
-  transform-origin :top left;
-  transition :.2s transform ease-out;
-  will-change :transform;
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
   z-index: -1;
 }
-.coolBeans:hover::after{
+.coolBeans:hover::after {
   transform: translate(0, 0);
 }
-  
-.coolBeans:hover{
+
+.coolBeans:hover {
   border: 2px solid transparent;
   color: white;
-  transform: scale(1.0);
+  transform: scale(1);
   will-change: transform;
 }
