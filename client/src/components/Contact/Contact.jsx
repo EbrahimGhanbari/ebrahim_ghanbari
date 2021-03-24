@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Transition from "../Animation/Transition";
+// import Transition from "../Animation/Transition";
 import Trail from "../Animation/Trail";
 import axios from "axios";
 import "./Contact.scss";
