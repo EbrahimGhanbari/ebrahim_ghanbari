@@ -64,10 +64,6 @@ export default function (props) {
       <div className="index">
         {display.desc ? (
           <>
-            <DividerBlock
-              // onEnterViewport={(e) => trackerUpdate(DESCRIPTION)}
-              height={"0.1vh"}
-            />
             <Description />
             <DividerBlock height={"60vh"} />
           </>
@@ -76,11 +72,6 @@ export default function (props) {
         )}
         {display.project ? (
           <>
-            <DividerBlock height={"30vh"} />
-            <DividerBlock
-              // onEnterViewport={(e) => trackerUpdate(PROJECT)}
-              height={"0vh"}
-            />
             <Projects />
             <DividerBlock height={"120vh"} />
           </>
@@ -93,11 +84,6 @@ export default function (props) {
 
         {display.resume ? (
           <>
-            <DividerBlock height={"30vh"} />
-            <DividerBlock
-              // onEnterViewport={(e) => trackerUpdate(RESUME)}
-              height={"0vh"}
-            />
             <Resume />
             <DividerBlock height={"170vh"} />
           </>
@@ -109,12 +95,6 @@ export default function (props) {
         )}
         {display.about ? (
           <>
-            <DividerBlock height={"30vh"} />
-            <DividerBlock
-              height={"0vh"}
-              // onEnterViewport={() => trackerUpdate(ABOUT)}
-            />
-            <DividerBlock height={"1vh"} />
             <About />
             <DividerBlock height={"120vh"} />
           </>
