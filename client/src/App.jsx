@@ -62,7 +62,7 @@ export default function (props) {
       {/* <SideBar tracker={tracker} /> */}
       {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
       <div className="index">
-        {/* {display.desc ? (
+        {display.desc ? (
           <>
             <Description />
             <DividerBlock height={"60vh"} />
@@ -103,7 +103,7 @@ export default function (props) {
             <DividerBlock height={"60vh"} />
             <DividerBlock height={"100vh"} onEnterViewport={showAbout} />
           </div>
-        )} */}
+        )}
 
         <Contact />
         <DividerBlock height={"120vh"} />
