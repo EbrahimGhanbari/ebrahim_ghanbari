@@ -30,9 +30,17 @@ h1 {
 }
 
 @media screen and (max-width: 539px) {
+  .index {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 850px) {
+  .index {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1350px) {

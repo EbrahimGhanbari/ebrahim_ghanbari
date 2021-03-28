@@ -2,7 +2,7 @@
 
 .top_nav {
   margin-top: 3%;
-  margin-bottom: 2%;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,6 +18,7 @@
       display: flex;
       font-family: $logo-font;
       font-size: 5vw;
+
       .logo_hover {
         display: none;
       }
@@ -25,11 +26,11 @@
   }
 
   nav {
+    width: 60%;
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-top: 5vh;
-    padding-right: 5vw;
+
     font-family: $light-font;
 
     .link-pionter {
@@ -38,15 +39,14 @@
       font-family: $light-font;
       font-weight: 300;
       font-size: 22px;
-      margin: 2vw;
-
       text-decoration: none;
     }
 
     ul {
+      width: 100%;
       display: flex;
       list-style: none;
-      text-align: center;
+      justify-content: space-between;
     }
 
     .link-pionter::after {
@@ -69,13 +69,77 @@
   }
 }
 @media screen and (max-width: 539px) {
+  .top_nav {
+    margin-top: 5vh;
+    height: 10vh;
+
+    .top_nav_left {
+      .logo {
+        font-size: 48px;
+      }
+    }
+
+    nav {
+      display: none;
+    }
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 850px) {
+  .top_nav {
+    margin-top: 8%;
+    height: 10vh;
+
+    .top_nav_left {
+      .logo {
+        font-size: 6.5vw;
+      }
+    }
+
+    nav {
+      .link-pionter {
+        font-size: 2.75vw;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1350px) {
+  .top_nav {
+    margin-top: 8%;
+    height: 10vh;
+
+    .top_nav_left {
+      .logo {
+        font-size: 6.5vw;
+      }
+    }
+
+    nav {
+      width: 50%;
+      .link-pionter {
+        font-size: 2vw;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1350px) {
+  .top_nav {
+    margin-top: 8%;
+    height: 10vh;
+
+    .top_nav_left {
+      .logo {
+        font-size: 6.5vw;
+      }
+    }
+
+    nav {
+      width: 50%;
+      .link-pionter {
+        font-size: 1.8vw;
+      }
+    }
+  }
 }

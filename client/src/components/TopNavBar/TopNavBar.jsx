@@ -26,10 +26,7 @@ export default function (props) {
         </div>
         <nav>
           <ul>
-            {/* <li className="one">
-              <a href="/">Who I am</a>
-            </li> */}
-            <li className="two">
+            <li>
               <Link
                 className="link-pionter"
                 activeClass="active"
@@ -40,7 +37,7 @@ export default function (props) {
                 Project
               </Link>
             </li>
-            <li className="three">
+            <li>
               <Link
                 className="link-pionter"
                 activeClass="active"
@@ -51,7 +48,7 @@ export default function (props) {
                 Résumé
               </Link>
             </li>
-            <li className="four">
+            <li>
               <Link
                 className="link-pionter"
                 activeClass="active"
@@ -62,7 +59,7 @@ export default function (props) {
                 About
               </Link>
             </li>
-            <li className="five">
+            <li>
               <Link
                 className="link-pionter"
                 activeClass="active"
