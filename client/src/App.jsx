@@ -60,8 +60,8 @@ export default function (props) {
   return (
     <div>
       {/* <SideBar tracker={tracker} /> */}
-      {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
       <div className="index">
+        {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
         {display.desc ? (
           <>
             <Description />

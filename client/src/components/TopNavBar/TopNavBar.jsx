@@ -24,23 +24,12 @@ export default function (props) {
             </div>
           </a>
         </div>
-        <div className="menu">
+        <nav>
           <ul>
-            <li className="one">
+            {/* <li className="one">
               <a href="/">Who I am</a>
-            </li>
+            </li> */}
             <li className="two">
-              <Link
-                className="link-pionter"
-                activeClass="active"
-                to="resume"
-                spy={true}
-                smooth={true}
-              >
-                Résumé
-              </Link>
-            </li>
-            <li className="three">
               <Link
                 className="link-pionter"
                 activeClass="active"
@@ -49,6 +38,17 @@ export default function (props) {
                 smooth={true}
               >
                 Project
+              </Link>
+            </li>
+            <li className="three">
+              <Link
+                className="link-pionter"
+                activeClass="active"
+                to="resume"
+                spy={true}
+                smooth={true}
+              >
+                Résumé
               </Link>
             </li>
             <li className="four">
@@ -73,9 +73,8 @@ export default function (props) {
                 Contact
               </Link>
             </li>
-            <hr />
           </ul>
-        </div>
+        </nav>
       </div>
     </Trail>
   );

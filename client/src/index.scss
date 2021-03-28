@@ -16,7 +16,7 @@ code {
 }
 
 .index {
-  margin-left: 13vw;
+  margin-left: 11vw;
   margin-right: 11vw;
 }
 
@@ -27,4 +27,20 @@ h1 {
   padding-top: 35px;
   padding-bottom: 35px;
   margin-bottom: 0cm;
+}
+
+@media screen and (max-width: 539px) {
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+  .index {
+    margin-left: 11vw;
+    margin-right: 11vw;
+  }
+}
+
+@media screen and (min-width: 1350px) {
 }
