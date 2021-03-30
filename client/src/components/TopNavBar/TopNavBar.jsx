@@ -1,78 +1,14 @@
-import React, { useState } from "react";
-
-import TrailText from "../Animation/TrailText";
-import Trail from "../Animation/Trail";
-import { Link } from "react-scroll";
-
-import "./TopNavBar.scss";
+import React, { useState, useEffect } from "react";
+import MobileNavBar from "./MobileNavBar";
+import LaptopNavBar from "./LaptopNavBar";
 
 export default function (props) {
-  const [toggleStatus, setToggleStatus] = useState(true);
-  // const [open, set] = useState(true);
-
-  return (
-    <Trail open={true} xValue={-500}>
-      <div className="top_nav">
-        <div className="top_nav_left">
-          <a href="/" className="logo">
-            <div
-              onMouseEnter={() => setToggleStatus(false)}
-              onMouseLeave={() => setToggleStatus(true)}
-            >
-              {"E"}
-              <TrailText text={"brahim Ghanbari"} toggle={toggleStatus} />
-            </div>
-          </a>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <Link
-                className="link-pionter"
-                activeClass="active"
-                to="project"
-                spy={true}
-                smooth={true}
-              >
-                Project
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link-pionter"
-                activeClass="active"
-                to="resume"
-                spy={true}
-                smooth={true}
-              >
-                Résumé
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link-pionter"
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link-pionter"
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </Trail>
+  const [windowSize, setWindowSize] = useState(
+    document.documentElement.clientWidth
   );
+  useEffect(() => {
+    setWindowSize(document.documentElement.clientWidth);
+  }, [document.documentElement.clientWidth]);
+  console.log(windowSize);
+  return windowSize <= 539 ? <MobileNavBar /> : <LaptopNavBar />;
 }

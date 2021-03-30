@@ -17,6 +17,7 @@
     "react-spring": "^8.0.27",
     "react-useanimations": "^2.0.6",
     "react-with-gesture": "^4.0.8",
+    "reactstrap": "^8.9.0",
     "sass": "^1.26.11"
   },
   "scripts": {

@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.navbar_mobile {
+  @import "~bootstrap/scss/bootstrap";
+  cursor: pointer;
+
+  .navbar_bootstrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: rgb(241, 247, 248);
+    // border-width: 4px;
+    // border-style: inset;
+    // color: #949392;
+  }
+  img {
+    width: 7vw;
+  }
+}
