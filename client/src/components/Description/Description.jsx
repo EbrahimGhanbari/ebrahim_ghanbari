@@ -17,7 +17,6 @@ export default function (props) {
                   <Transition text={"H.i., I a.m E.b.r.a.h.i.m."} />
                 </div>
               </h1>
-              {/* <h1 id="title">Hi, I am Ebrahim</h1> */}
               <div id="sub_title">
                 a <b> Full-Stack Developer</b> in beautiful Calgary
               </div>
@@ -32,7 +31,9 @@ export default function (props) {
               accessibility, and execution of products.
             </p>
           </div>
-          <Pull></Pull>
+          <div>
+            <Pull></Pull>
+          </div>
         </div>
       </div>
     </Trail>

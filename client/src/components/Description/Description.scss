@@ -5,7 +5,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 5vh;
 
   .description_text {
     display: flex;
@@ -35,13 +34,8 @@
 
 @media screen and (max-width: 539px) {
   .description {
-    padding-bottom: 5vh;
-
     .description_text {
-      width: 60%;
-      font-family: $base-font;
-      font-size: 1.3vw;
-      font-weight: 300;
+      width: 70%;
 
       #sub_title {
         font-size: 22px;
@@ -53,7 +47,7 @@
       }
 
       p {
-        font-size: 22px;
+        font-size: 18px;
         padding-bottom: 10px;
       }
     }
@@ -67,4 +61,24 @@
 }
 
 @media screen and (min-width: 1350px) {
+  .description {
+    margin-top: 8vh;
+    .description_text {
+      width: 60%;
+
+      #sub_title {
+        font-size: 26px;
+        padding-bottom: 10px;
+      }
+
+      #title {
+        padding-bottom: 10px;
+      }
+
+      p {
+        font-size: 26px;
+        padding-bottom: 10px;
+      }
+    }
+  }
 }

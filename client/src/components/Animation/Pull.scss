@@ -15,12 +15,24 @@
 }
 
 @media screen and (max-width: 539px) {
+  .pull {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 850px) {
+  .pull {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1350px) {
+  .pull {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 1350px) {
