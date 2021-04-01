@@ -51,17 +51,21 @@ export default function (props) {
             </div>
           </h1>
           <div className="project">
-            <div className="box">
-              <Card project={projects.cnergreen} />
+            <div className="box_container">
+              <div className="box">
+                <Card project={projects.cnergreen} />
+              </div>
+              <div className="box">
+                <Card project={projects.wing} />
+              </div>
             </div>
-            <div className="box">
-              <Card project={projects.wing} />
-            </div>
-            <div className="box">
-              <Card project={projects.interview} />
-            </div>
-            <div className="box">
-              <Card project={projects.jungle} />
+            <div className="box_container">
+              <div className="box">
+                <Card project={projects.interview} />
+              </div>
+              <div className="box">
+                <Card project={projects.jungle} />
+              </div>
             </div>
           </div>
         </div>
