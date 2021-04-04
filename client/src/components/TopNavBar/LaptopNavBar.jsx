@@ -8,7 +8,6 @@ import "./LaptopNavBar.scss";
 
 export default function (props) {
   const [toggleStatus, setToggleStatus] = useState(true);
-  // const [open, set] = useState(true);
 
   return (
     <Trail open={true} xValue={-500}>

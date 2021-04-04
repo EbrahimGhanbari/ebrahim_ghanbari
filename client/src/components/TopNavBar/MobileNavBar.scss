@@ -11,11 +11,15 @@
     font-weight: 300;
     font-size: 18px;
     background-color: rgb(241, 247, 248);
-    // border-width: 4px;
-    // border-style: inset;
-    // color: #949392;
   }
   img {
     width: 7vw;
+  }
+  .logo {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-family: $logo-font;
+    font-size: 5vw;
   }
 }

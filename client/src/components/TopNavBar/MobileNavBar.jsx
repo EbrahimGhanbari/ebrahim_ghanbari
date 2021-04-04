@@ -18,9 +18,7 @@ export default function (props) {
   return (
     <div className="navbar_mobile">
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
-          <img src="logoNoText.png" alt="Italian Trulli" />
-        </NavbarBrand>
+        <NavbarBrand>E</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav className="navbar_bootstrap" navbar>
