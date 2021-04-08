@@ -4,7 +4,6 @@ import handleViewport from "react-in-viewport";
 import TopNavBar from "./components/TopNavBar/TopNavBar";
 import Description from "./components/Description/Description";
 import Projects from "./components/Projects/Projects";
-import SideBar from "./components/SideBar/SideBar";
 import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
@@ -24,15 +23,9 @@ const DividerBlock = function ({ onEnterViewport = function () {}, height }) {
   );
 };
 
-const DESCRIPTION = "description";
-const PROJECT = "project";
-const RESUME = "resume";
-const ABOUT = "about";
-const CONTACT = "contact";
-
 export default function (props) {
   const [display, setDisplay] = useState({});
-  const [tracker, setTracker] = useState(DESCRIPTION);
+
   const time = 1500;
 
   useEffect(() => {
@@ -51,10 +44,6 @@ export default function (props) {
 
   function showAbout() {
     setDisplay({ ...display, about: true });
-  }
-  function trackerUpdate(item) {
-    console.log(item);
-    setTracker(item);
   }
 
   return (
