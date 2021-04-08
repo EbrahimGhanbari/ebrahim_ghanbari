@@ -24,12 +24,18 @@
 
 @media screen and (min-width: 640px) and (max-width: 850px) {
   .pull {
-    height: 250px;
-    width: 250px;
+    height: 35vw;
+    width: 30vw;
   }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1350px) {
+  .pull {
+    height: 270px;
+    width: 230px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
   .pull {
     height: 300px;
     width: 300px;
