@@ -18,7 +18,11 @@ export default function (props) {
   return (
     <div className="navbar_mobile">
       <Navbar color="faded" light>
-        <NavbarBrand>E</NavbarBrand>
+        <NavbarBrand>
+          <a href="/" className="mobile_logo">
+            E
+          </a>
+        </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav className="navbar_bootstrap" navbar>
@@ -26,11 +30,25 @@ export default function (props) {
               <NavLink>
                 <Link
                   activeClass="active"
-                  to="application"
+                  to="project"
                   spy={true}
                   smooth={true}
                 >
-                  Application
+                  Project
+                </Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Link activeClass="active" to="resume" spy={true} smooth={true}>
+                  Résumé
+                </Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Link activeClass="active" to="about" spy={true} smooth={true}>
+                  About
                 </Link>
               </NavLink>
             </NavItem>
@@ -38,19 +56,13 @@ export default function (props) {
               <NavLink>
                 <Link
                   activeClass="active"
-                  to="solution"
+                  to="contact"
                   spy={true}
                   smooth={true}
                 >
-                  Solution
+                  Contact
                 </Link>
               </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/team">Team</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
