@@ -42,34 +42,37 @@ const projects = {
 
 export default function (props) {
   return (
-    <Trail open={true} xValue={500}>
-      <div>
-        <div id="project">
-          <h1>
-            <div style={{ display: "flex", height: "80px" }}>
-              <Transition text={"S.e.l.e.c.t.e.d W.o.r.k.s"} />
-            </div>
-          </h1>
-          <div className="project">
-            <div className="box_container">
-              <div className="box">
-                <Card project={projects.cnergreen} />
+    <div>
+      <Trail open={true} xValue={500}>
+        <div>
+          <div id="project">
+            <h1>
+              <div style={{ display: "flex", height: "80px" }}>
+                <Transition text={"S.e.l.e.c.t.e.d W.o.r.k.s"} />
               </div>
-              <div className="box">
-                <Card project={projects.wing} />
+            </h1>
+            <div className="project">
+              <div className="box_container">
+                <div className="box">
+                  <Card project={projects.cnergreen} />
+                </div>
+                <div className="box">
+                  <Card project={projects.wing} />
+                </div>
               </div>
-            </div>
-            <div className="box_container">
-              <div className="box">
-                <Card project={projects.interview} />
-              </div>
-              <div className="box">
-                <Card project={projects.jungle} />
+              <div className="box_container">
+                <div className="box">
+                  <Card project={projects.interview} />
+                </div>
+                <div className="box">
+                  <Card project={projects.jungle} />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </Trail>
+      </Trail>
+      <div id="project_div"> </div>
+    </div>
   );
 }

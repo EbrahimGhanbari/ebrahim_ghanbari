@@ -23,9 +23,8 @@ const DividerBlock = function ({ onEnterViewport = function () {}, height }) {
   );
 };
 
-export default function (props) {
+export default function () {
   const [display, setDisplay] = useState({});
-
   const time = 1500;
 
   useEffect(() => {
@@ -48,7 +47,6 @@ export default function (props) {
 
   return (
     <div>
-      {/* <SideBar tracker={tracker} /> */}
       <div className="index">
         {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
         {display.desc ? (
@@ -62,7 +60,7 @@ export default function (props) {
         {display.project ? (
           <>
             <Projects />
-            <DividerBlock height={"120vh"} />
+            {/* <DividerBlock height={"200vw"} /> */}
           </>
         ) : (
           <div id="project">
