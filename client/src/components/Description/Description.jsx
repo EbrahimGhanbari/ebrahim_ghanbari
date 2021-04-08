@@ -6,6 +6,9 @@ import Trail from "../Animation/Trail";
 import "./Description.scss";
 
 export default function (props) {
+  const windowSize = document.documentElement.clientWidth;
+  const titleHeight = windowSize < 850 ? "5vw" : "5vw";
+
   return (
     <Trail open={true} xValue={500}>
       <div id="description">
@@ -16,7 +19,7 @@ export default function (props) {
           <div className="description_text">
             <div>
               <div id="title">
-                <div style={{ display: "flex", height: "80px" }}>
+                <div style={{ display: "flex", height: titleHeight }}>
                   <Transition text={"H.i., I a.m E.b.r.a.h.i.m."} />
                 </div>
               </div>

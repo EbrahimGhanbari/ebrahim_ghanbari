@@ -9,6 +9,6 @@ export default function (props) {
   useEffect(() => {
     setWindowSize(document.documentElement.clientWidth);
   }, [document.documentElement.clientWidth]);
-  console.log(windowSize);
+
   return windowSize <= 539 ? <MobileNavBar /> : <LaptopNavBar />;
 }
