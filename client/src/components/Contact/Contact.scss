@@ -10,7 +10,6 @@
 .contact {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
   .contact_left {
     img {
       padding-top: 5vh;
@@ -68,46 +67,4 @@
     margin-right: 25px;
     width: 100%;
   }
-}
-
-.coolBeans {
-  font-family: $light-font;
-  font-weight: 700;
-  font-size: 28px;
-  border: 2px solid currentColor;
-  border-radius: 2rem;
-  color: black;
-  background-color: white;
-  overflow: hidden;
-  padding: 1rem 2rem;
-  position: relative;
-  text-decoration: none;
-  transition: 0.2s transform ease-in-out;
-  will-change: transform;
-  z-index: 0;
-}
-.coolBeans::after {
-  background-color: black;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.2s transform ease-out;
-  will-change: transform;
-  z-index: -1;
-}
-.coolBeans:hover::after {
-  transform: translate(0, 0);
-}
-
-.coolBeans:hover {
-  border: 2px solid transparent;
-  color: white;
-  transform: scale(1);
-  will-change: transform;
 }
