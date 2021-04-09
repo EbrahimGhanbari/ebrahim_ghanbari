@@ -38,6 +38,10 @@
 .front {
   border: 3px solid black;
   section {
+    .card_title {
+      font-family: $sub-title-font;
+      font-size: 130%;
+    }
     padding: 20px;
 
     p {
@@ -64,11 +68,13 @@
   .front {
     border: 3px solid black;
     section {
-      padding: 20px;
+      .card_title {
+        font-size: 18px;
+      }
+      padding: 10px;
 
       p {
-        font-family: $light-font;
-        font-size: 22px;
+        font-size: 16px;
         padding-bottom: 10px;
       }
     }
@@ -91,19 +97,122 @@
   .front {
     border: 3px solid black;
     section {
-      padding: 20px;
+      .card_title {
+        font-size: 20px;
+      }
+      padding: 10px;
 
       p {
-        font-family: $light-font;
-        font-size: 22px;
+        font-size: 18px;
         padding-bottom: 10px;
       }
     }
   }
 }
 
-@media screen and (min-width: 850px) and (max-width: 1350px) {
+@media screen and (min-width: 650px) and (max-width: 850px) {
+  .c {
+    width: 65vw;
+    height: 45vw;
+    border-radius: 10px;
+  }
+
+  .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .front {
+    border: 3px solid black;
+    section {
+      .card_title {
+        font-size: 22px;
+      }
+      padding: 20px;
+
+      p {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+  .c {
+    width: 40vw;
+    height: 24vw;
+  }
+
+  .icon_1 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .front {
+    section {
+      .card_title {
+        font-size: 18px;
+      }
+      .card_title {
+        margin-top: 0px;
+        padding-bottom: 0px;
+      }
+      padding: 20px;
+
+      p {
+        font-size: 15px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+  .c {
+    width: 40vw;
+    height: 22vw;
+  }
+
+  .icon_1 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .front {
+    section {
+      .card_title {
+        font-size: 1.7vw;
+      }
+      .card_title {
+        margin-top: 0px;
+        padding-bottom: 0px;
+      }
+      padding: 15px;
+
+      p {
+        font-size: 1.5vw;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1350px) {
+  .front {
+    section {
+      .card_title {
+        font-size: 1.7vw;
+      }
+      .card_title {
+        margin-top: 0px;
+        padding-bottom: 0px;
+      }
+      padding: 15px;
+
+      p {
+        font-size: 1.5vw;
+      }
+    }
+  }
 }

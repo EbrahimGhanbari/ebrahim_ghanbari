@@ -63,9 +63,9 @@ export default function (props) {
         }}
       >
         <section>
-          <h2>{project.title}</h2>
+          <div className="card_title">{project.title}</div>
           <p>{project.description}</p>
-          <h2>Tools and Environment:</h2>
+          <div className="card_title">Tools and Environment:</div>
           <p>{project.env}</p>
         </section>
       </animated.div>
