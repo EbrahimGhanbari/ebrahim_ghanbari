@@ -24,7 +24,7 @@ export default function (props) {
                 </div>
               </div>
               <div id="sub_title">
-                a <b> Full-Stack Developer</b> in beautiful Calgary
+                a <b> Full-Stack Developer</b> in beautiful Canada
               </div>
             </div>
             <p>
