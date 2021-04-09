@@ -25,6 +25,7 @@ export default function (props) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    window.location.assign("/");
 
     axios({
       method: "POST",
