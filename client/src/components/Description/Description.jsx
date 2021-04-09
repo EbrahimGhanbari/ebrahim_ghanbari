@@ -32,9 +32,10 @@ export default function (props) {
               (SPA), and Visual Development.
             </p>
             <p>
-              I believe No-Code solutions are the future of work, allowing teams
-              to work faster, and place their focus on the design,
-              accessibility, and execution of products.
+              I love being challanged. Working in different group in during my
+              time at Weatherford, I learnt how to adapt quickly. I have
+              developed a well-rounded skillset through being involved in
+              various projects.
             </p>
           </div>
         </div>
