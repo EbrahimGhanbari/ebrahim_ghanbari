@@ -8,6 +8,17 @@ import instagram from "react-useanimations/lib/instagram";
 import linkedin from "react-useanimations/lib/linkedin";
 
 export default function (props) {
+  const windowSize = document.documentElement.clientWidth;
+  const iconSize = windowSize < 850 ? 30 : 44;
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 100,
+      left: 100,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div className="footer">
       <hr />
@@ -18,31 +29,33 @@ export default function (props) {
             rel="noreferrer"
             href="https://github.com/EbrahimGhanbari"
           >
-            <UseAnimations size={44} animation={github} />
+            <UseAnimations size={iconSize} animation={github} />
           </a>
           <a
             href="https://www.linkedin.com/in/ebrahim-ghanbari/"
             rel="noreferrer"
             target="_blank"
           >
-            <UseAnimations size={44} animation={linkedin} />
+            <UseAnimations size={iconSize} animation={linkedin} />
           </a>
           <a
             href="https://www.facebook.com/ebrahim.ghanbari1989"
             rel="noreferrer"
             target="_blank"
           >
-            <UseAnimations size={44} animation={facebook} />
+            <UseAnimations size={iconSize} animation={facebook} />
           </a>
           <a
             href="https://www.instagram.com/ebrahimg11/"
             rel="noreferrer"
             target="_blank"
           >
-            <UseAnimations size={44} animation={instagram} />
+            <UseAnimations size={iconSize} animation={instagram} />
           </a>
         </div>
-        <div className="footer-logo">E</div>
+        <div onClick={scrollToTop} className="footer-logo">
+          E
+        </div>
       </div>
     </div>
   );
