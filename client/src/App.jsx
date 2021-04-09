@@ -72,7 +72,6 @@ export default function () {
         {display.resume ? (
           <>
             <Resume />
-            <DividerBlock height={"170vh"} />
           </>
         ) : (
           <div id="resume">
