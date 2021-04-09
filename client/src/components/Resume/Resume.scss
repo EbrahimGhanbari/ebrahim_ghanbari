@@ -50,6 +50,92 @@
 }
 
 #resume_div {
-  height: 260vw;
+  height: 1100px;
   width: 10px;
+}
+@media screen and (max-width: 539px) {
+  #download_resume {
+    font-size: 22px;
+  }
+
+  .resume {
+    .resume_subtitle {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 15px;
+      padding-top: 2vh;
+    }
+
+    dt {
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+
+    .two-column {
+      dl {
+        padding-right: 10vw;
+      }
+    }
+
+    button {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+  #download_resume {
+    font-size: 22px;
+  }
+
+  .resume {
+    .resume_subtitle {
+      font-size: 26px;
+    }
+    h2 {
+      padding-top: 2vh;
+    }
+
+    dt {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    .two-column {
+      dl {
+        padding-right: 10vw;
+      }
+    }
+
+    button {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+  .resume {
+    .resume_subtitle {
+      font-size: 26px;
+    }
+    h2 {
+      font-size: 16px;
+      padding-top: 2vh;
+    }
+
+    dt {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    .two-column {
+      dl {
+        padding-right: 10vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1350px) {
 }

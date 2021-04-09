@@ -19,7 +19,7 @@ export default function (props) {
               <div>
                 <h2 className="resume_subtitle">Work Experience</h2>
 
-                <h2>Web Development Mentor - Part Time</h2>
+                <h2>Web Development Mentor • Part Time</h2>
                 <dl>
                   <dt>Lighthouse Labs</dt>
                   <dt>September 2020 – January 2021</dt>
@@ -72,7 +72,9 @@ export default function (props) {
             </div>
           </section>
           <a href="cv.pdf" target="_blank">
-            <button className="coolBeans">Download Resume</button>
+            <button id="download_resume" className="coolBeans">
+              Download Resume
+            </button>
           </a>
         </div>
       </Trail>
