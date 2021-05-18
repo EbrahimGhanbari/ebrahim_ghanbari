@@ -5,7 +5,7 @@ import Trail from "../Animation/Trail";
 
 import "./Description.scss";
 
-export default function (props) {
+export default function () {
   const windowSize = document.documentElement.clientWidth;
   const titleHeight = windowSize < 850 ? "5vw" : "5vw";
 

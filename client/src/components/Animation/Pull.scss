@@ -1,7 +1,7 @@
 .pull {
   height: 350px;
   width: 350px;
-  border-radius: 18%;
+  border-radius: 50%;
   background-image: url("./profile_pic.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,7 +17,7 @@
 @media screen and (max-width: 639px) {
   .pull {
     height: 35vw;
-    width: 30vw;
+    width: 35vw;
     margin-top: 10vh;
   }
 }
@@ -25,7 +25,7 @@
 @media screen and (min-width: 640px) and (max-width: 850px) {
   .pull {
     height: 35vw;
-    width: 30vw;
+    width: 35vw;
   }
 }
 

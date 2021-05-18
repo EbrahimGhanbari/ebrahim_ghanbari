@@ -3,6 +3,7 @@
 .navbar_mobile {
   @import "~bootstrap/scss/bootstrap";
   cursor: pointer;
+  padding: 0.5rem 0rem;
 
   .navbar_bootstrap {
     display: flex;

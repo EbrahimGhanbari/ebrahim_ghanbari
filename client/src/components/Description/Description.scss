@@ -8,6 +8,7 @@
   .description_text {
     display: flex;
     flex-direction: column;
+    text-align: justify;
     width: 60%;
     font-family: $base-font;
     font-size: 1.3vw;
@@ -31,37 +32,62 @@
     p {
       font-family: $light-font;
       font-size: 22px;
-      padding-bottom: 10px;
+      padding-bottom: 0px;
     }
   }
 }
 
 @media screen and (max-width: 639px) {
   .description {
+    flex-direction: column-reverse;
+
     .description_text {
-      width: 60%;
+      width: 100%;
+      font-size: 22px;
 
       #sub_title {
-        font-size: 18px;
+        font-size: 24px;
         padding-top: 0px;
         padding-bottom: 10px;
       }
 
       #title {
-        font-size: 4.5vw;
-        padding-bottom: 0px;
+        font-size: 34px;
+        padding-bottom: 20px;
         margin-bottom: 0px;
       }
 
       p {
-        font-size: 18px;
-        padding-bottom: 10px;
+        font-size: 22px;
       }
     }
   }
 }
 
 @media screen and (min-width: 640px) and (max-width: 850px) {
+  .description {
+    flex-direction: column-reverse;
+
+    .description_text {
+      width: 100%;
+
+      #sub_title {
+        font-size: 3vw;
+        padding-top: 0px;
+        padding-bottom: 10px;
+      }
+
+      #title {
+        font-size: 5vw;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1350px) {
