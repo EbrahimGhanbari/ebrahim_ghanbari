@@ -24,6 +24,9 @@ const DividerBlock = function ({ onEnterViewport = function () {}, height }) {
 };
 
 export default function () {
+  const windowSize = document.documentElement.clientWidth;
+  const spaceDescProject = windowSize < 850 ? "120vh" : "60vh";
+
   const [display, setDisplay] = useState({});
   const time = 1500;
 
@@ -48,11 +51,11 @@ export default function () {
   return (
     <div>
       <div className="index">
-        {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
+        {/* {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
         {display.desc ? (
           <>
             <Description />
-            <DividerBlock height={"60vh"} />
+            <DividerBlock height={spaceDescProject} />
           </>
         ) : (
           <DividerBlock height={"100vh"} />
@@ -60,14 +63,13 @@ export default function () {
         {display.project ? (
           <>
             <Projects />
-            {/* <DividerBlock height={"200vw"} /> */}
           </>
         ) : (
           <div id="project">
             <DividerBlock height={"60vh"} />
             <DividerBlock height={"100vh"} onEnterViewport={showProject} />
           </div>
-        )}
+        )} */}
 
         {display.resume ? (
           <>
