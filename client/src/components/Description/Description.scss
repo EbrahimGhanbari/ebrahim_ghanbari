@@ -2,7 +2,7 @@
 
 .description {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
 
   .description_text {
@@ -40,6 +40,7 @@
 @media screen and (max-width: 639px) {
   .description {
     flex-direction: column-reverse;
+    align-items: center;
 
     .description_text {
       width: 100%;
@@ -67,6 +68,7 @@
 @media screen and (min-width: 640px) and (max-width: 850px) {
   .description {
     flex-direction: column-reverse;
+    align-items: center;
 
     .description_text {
       width: 100%;

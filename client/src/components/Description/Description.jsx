@@ -6,8 +6,9 @@ import Trail from "../Animation/Trail";
 import "./Description.scss";
 
 export default function () {
-  const windowSize = document.documentElement.clientWidth;
-  const titleHeight = windowSize < 850 ? "5vw" : "5vw";
+  // const windowSize = document.documentElement.clientWidth;
+  // const titleHeight = windowSize < 850 ? "5vw" : "5vw";
+  const titleHeight = "5vw";
 
   return (
     <Trail open={true} xValue={500}>

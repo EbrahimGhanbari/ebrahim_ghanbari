@@ -59,17 +59,26 @@
   }
 
   .resume {
+    section {
+      flex-direction: column;
+      .resume-left {
+        width: 100%;
+      }
+      .resume-right {
+        width: 100%;
+      }
+    }
     .resume_subtitle {
       font-size: 24px;
     }
     h2 {
       font-size: 15px;
-      padding-top: 2vh;
+      padding-top: 1vh;
     }
 
     dt {
       font-size: 16px;
-      padding-bottom: 10px;
+      padding-bottom: 0px;
     }
 
     .two-column {
