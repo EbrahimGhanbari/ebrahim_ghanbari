@@ -4,6 +4,7 @@ import Trail from "../Animation/Trail";
 import Skills from "./Skills";
 import Educations from "./Educations";
 import WorkExperience from "./WorkExperience";
+import Courses from "./Courses";
 import "./Resume.scss";
 
 export default function (props) {
@@ -24,6 +25,7 @@ export default function (props) {
               <Educations />
             </div>
           </section>
+          <Courses />
           <Skills />
           <a href="cv.pdf" target="_blank">
             <button id="download_resume" className="coolBeans">

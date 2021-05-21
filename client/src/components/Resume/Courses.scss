@@ -1,0 +1,18 @@
+.course {
+  .course_1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div {
+      width: 360px;
+    }
+  }
+  .ext_link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .ext_link:hover {
+    color: black;
+  }
+}
