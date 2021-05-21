@@ -14,6 +14,7 @@ export default function () {
             Learn & Understand NodeJS{" "}
             <a
               className="ext_link"
+              // eslint-disable-next-line react/jsx-no-target-blank
               target="_blank"
               href="https://www.udemy.com/course/understand-nodejs/"
             >
@@ -29,6 +30,7 @@ export default function () {
             Machine Learning A-Z™: Hands-On Python & R In Data Science{" "}
             <a
               className="ext_link"
+              // eslint-disable-next-line react/jsx-no-target-blank
               target="_blank"
               href="https://www.udemy.com/course/machinelearning/"
             >
@@ -45,6 +47,7 @@ export default function () {
             The Python Mega Course{" "}
             <a
               className="ext_link"
+              // eslint-disable-next-line react/jsx-no-target-blank
               target="_blank"
               href="https://www.udemy.com/course/the-python-mega-course/"
             >
@@ -60,6 +63,7 @@ export default function () {
             Machine Learning Course{" "}
             <a
               className="ext_link"
+              // eslint-disable-next-line react/jsx-no-target-blank
               target="_blank"
               href="https://www.kaggle.com/"
             >
