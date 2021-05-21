@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./Skills.scss";
+
 export default function () {
   return (
     <div>
       <h2 className="resume_subtitle">Skills</h2>
-      <div className="two-column">
+      <div>
         <dl>
           <dt>ReactJS </dt>
           <dt>Javascript </dt>

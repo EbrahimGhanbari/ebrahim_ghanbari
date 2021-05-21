@@ -26,7 +26,7 @@ const DividerBlock = function ({ onEnterViewport = function () {}, height }) {
 export default function () {
   const windowSize = document.documentElement.clientWidth;
   const spaceDescProject = windowSize < 850 ? "120vh" : "60vh";
-
+  const spaceResumeAbout = windowSize < 850 ? "150vh" : "80vh";
   const [display, setDisplay] = useState({});
   const time = 1500;
 
@@ -74,6 +74,7 @@ export default function () {
         {display.resume ? (
           <>
             <Resume />
+            <DividerBlock height={spaceResumeAbout} />
           </>
         ) : (
           <div id="resume">
