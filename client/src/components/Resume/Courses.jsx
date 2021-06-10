@@ -60,7 +60,7 @@ export default function () {
         </div>
         <div>
           <h2>
-            Machine Learning Course{" "}
+            Machine Learning {" "}
             <a
               className="ext_link"
               // eslint-disable-next-line react/jsx-no-target-blank

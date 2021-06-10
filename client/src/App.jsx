@@ -51,7 +51,7 @@ export default function () {
   return (
     <div>
       <div className="index">
-        {/* {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
+        {display.topNavbar ? <TopNavBar /> : <DividerBlock height={"100vh"} />}
         {display.desc ? (
           <>
             <Description />
@@ -72,9 +72,9 @@ export default function () {
         )}
 
         {display.resume ? (
-          <> */}
-        <Resume />
-        {/* <DividerBlock height={spaceResumeAbout} />
+          <>
+            <Resume />
+            <DividerBlock height={spaceResumeAbout} />
           </>
         ) : (
           <div id="resume">
@@ -85,6 +85,7 @@ export default function () {
         {display.about ? (
           <>
             <About />
+
             <DividerBlock height={"120vh"} />
           </>
         ) : (
@@ -97,7 +98,7 @@ export default function () {
         <Contact />
         <DividerBlock height={"120vh"} />
 
-        <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
