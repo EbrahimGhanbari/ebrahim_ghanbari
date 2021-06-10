@@ -20,7 +20,9 @@
     {
       "question": "About this website?",
       "answer": [
-        "This website was designed and built by me. For the Back-End, I have used Express and MongoDB and Front-End is designed using React. You can find the source code here or contact me here if you like to know more. I am hosting this website using 10+ years old laptop sitting at the corner of my bedroom. So if it crashed while you are reading this, my apologies 😊."
+        "This website was designed and built by me. For the Back-End, I have used Express and MongoDB and Front-End is designed using React. You can find the source code ",
+        " or contact me ",
+        " if you like to know more. I am hosting this website using 10+ years old laptop sitting at the corner of my bedroom. So if it crashed while you are reading this, my apologies 😊."
       ]
     },
     {

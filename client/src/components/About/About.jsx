@@ -2,6 +2,7 @@ import React from "react";
 import Stack from "../Animation/Stack";
 import Transition from "../Animation/Transition";
 import Trail from "../Animation/Trail";
+import { Link } from "react-scroll";
 import "./About.scss";
 
 const data = require("../../data.json").about_me;
@@ -23,11 +24,31 @@ export default function (props) {
               <p>{data[1].answer[0]}</p>
               <p>{data[1].answer[1]}</p>
               <h2>{data[2].question}</h2>
-              <p>{data[2].answer[0]}</p>
+              <p>
+                {data[2].answer[0]}
+                <a
+                  className="here"
+                  href="https://github.com/EbrahimGhanbari/ebrahim_ghanbari"
+                  target="_blank"
+                >
+                  HERE
+                </a>
+                {data[2].answer[1]}
+                <Link
+                  className="here"
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                >
+                  HERE
+                </Link>
+                {data[2].answer[2]}
+              </p>
               <h2>{data[3].question}</h2>
               <p>{data[3].answer[0]}</p>
             </div>
-            {/* <Stack /> */}
+            <Stack />
           </div>
         </div>
       </Trail>

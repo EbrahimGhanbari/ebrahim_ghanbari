@@ -10,6 +10,12 @@
     p {
       font-family: $light-font;
       font-size: 22px;
+
+      .here {
+        cursor: pointer;
+        text-decoration: none;
+        color: #3d3af0;
+      }
     }
   }
 }

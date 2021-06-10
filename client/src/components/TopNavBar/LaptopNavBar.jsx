@@ -60,7 +60,7 @@ export default function (props) {
             </li>
             <li>
               <Link
-                className="link-pionter"
+                className="link-pionter-here"
                 activeClass="active"
                 to="contact"
                 spy={true}
