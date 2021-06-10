@@ -17,9 +17,11 @@ App.use(Logger("dev"));
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
-  "http://localhost",
+  "http://localhost:80",
   "ebrahim-ghanbari.ca",
-  "http://www.ebrahim-ghanbari.ca"
+  "http://www.ebrahim-ghanbari.ca",
+  "http://ebrahim-ghanbari.ca"
+
 ];
 const corsOptions = {
   origin: function (origin, callback) {
