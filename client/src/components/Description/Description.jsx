@@ -2,8 +2,9 @@ import React from "react";
 import Pull from "../Animation/Pull";
 import Transition from "../Animation/Transition";
 import Trail from "../Animation/Trail";
-
 import "./Description.scss";
+
+const data = require("../../data.json").description;
 
 export default function () {
   // const windowSize = document.documentElement.clientWidth;
@@ -25,19 +26,11 @@ export default function () {
                 </div>
               </div>
               <div id="sub_title">
-                a <b> Full-Stack Developer</b> in beautiful Canada
+                a <b> Software Developer</b> in beautiful Canada
               </div>
             </div>
-            <p>
-              I specialize in Front-End and Back-End, Single-Page Application
-              (SPA), and Visual Development.
-            </p>
-            <p>
-              I love being challanged. Working in different group in during my
-              time at Weatherford, I learnt how to adapt quickly. I have
-              developed a well-rounded skillset through being involved in
-              various projects.
-            </p>
+            <p>{data[0]}</p>
+            <p>{data[1]}</p>
           </div>
         </div>
       </div>

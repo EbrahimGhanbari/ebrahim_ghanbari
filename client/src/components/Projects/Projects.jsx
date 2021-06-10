@@ -5,40 +5,7 @@ import Trail from "../Animation/Trail";
 
 import "./Projects.scss";
 
-const projects = {
-  cnergreen: {
-    class: "project_1",
-    title: "cnergreen.ca",
-    description: "Single page business website for a startup",
-    env: "React | Express | Node.js | PostgreSQL | Bootstrap | Sass",
-    link: "www.cnergreen.ca",
-  },
-  wing: {
-    class: "project_2",
-    title: "Winged-it",
-    description:
-      "Single page cooking app that helps users decide what to cook using different APIs",
-    env: "Firebase | React | Storybook | Framer Motion | Bootstrap | Sass",
-    link: "",
-    icon: "GiChickenOven",
-  },
-  interview: {
-    class: "project_3",
-    title: "Interview Scheduler",
-    description: "An app that allows users to book and cancel interviews",
-    env:
-      "Express | Node.js | React | Storybook | Jest | Cypress | PostgreSQL | Bootstrap | Sass",
-    link: "",
-  },
-
-  jungle: {
-    class: "project_4",
-    title: "Jungle",
-    description: "An E-commerce app for buying and selling",
-    env: "Ruby on Rails | RSpec | Capybara | PostgreSQL | Bootstrap | Sas",
-    link: "",
-  },
-};
+const projects = require("../../data.json").projects;
 
 export default function (props) {
   return (
@@ -54,18 +21,18 @@ export default function (props) {
             <div className="project">
               <div className="box_container">
                 <div className="box">
-                  <Card project={projects.cnergreen} />
+                  <Card project={projects[0]} />
                 </div>
                 <div className="box">
-                  <Card project={projects.wing} />
+                  <Card project={projects[1]} />
                 </div>
               </div>
               <div className="box_container">
                 <div className="box">
-                  <Card project={projects.interview} />
+                  <Card project={projects[2]} />
                 </div>
                 <div className="box">
-                  <Card project={projects.jungle} />
+                  <Card project={projects[3]} />
                 </div>
               </div>
             </div>

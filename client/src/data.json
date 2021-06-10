@@ -1,0 +1,74 @@
+{
+  "description": [
+    "I specialized in Front-End and Back-End, Single-Page Application and Cloud-Based software.",
+    "I love being challenged. Working in different groups and people at Weatherford, I learnt how to adapt quickly. I have developed a well-rounded skillset through being involved in various projects. I am comfortable coding with JavaScript and Python. "
+  ],
+  "about_me": [
+    {
+      "question": "Who am I?",
+      "answer": [
+        "I am Ebrahim, a software developer with more than 6 years of experience in different roles in a service company."
+      ]
+    },
+    {
+      "question": "What I am passionate about?",
+      "answer": [
+        "To me, programming is “Pursuit of Happiness”. Imagine you are working on a bug for hours. You are getting frustrated. You do not have any lead. You pour a coffee for yourself and watch an episode of Superstore. You come back and BOOM, you found it. As Will Smith said, “this moment is called happiness” and I chose to be a programmer because this moment worth all the frustrations.",
+        "I also love dancing and sport motorcycles. Jorge Lorenzo is my favorite rider."
+      ]
+    },
+    {
+      "question": "About this website?",
+      "answer": [
+        "This website was designed and built by me. For the Back-End, I have used Express and MongoDB and Front-End is designed using React. You can find the source code here or contact me here if you like to know more. I am hosting this website using 10+ years old laptop sitting at the corner of my bedroom. So if it crashed while you are reading this, my apologies 😊."
+      ]
+    },
+    {
+      "question": "What else?",
+      "answer": [
+        "You may argue this but Golden Retrievers are the best dogs. Also, Kermit and Grover are my favorite puppets."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "class": "project_1",
+      "title": "cnergreen.ca",
+      "description": "Single page business website for a startup",
+      "env": "React | Express | Node.js | PostgreSQL | Bootstrap | Sass",
+      "link": "www.cnergreen.ca"
+    },
+
+    {
+      "class": "project_2",
+      "title": "Winged-it",
+      "description": "Single page cooking app that helps users decide what to cook using different APIs",
+      "env": "Firebase | React | Storybook | Framer Motion | Bootstrap | Sass",
+      "link": "",
+      "icon": "GiChickenOven"
+    },
+    {
+      "class": "project_3",
+      "title": "Interview Scheduler",
+      "description": "An app that allows users to book and cancel interviews",
+      "env": "Express | Node.js | React | Storybook | Jest | Cypress | PostgreSQL | Bootstrap | Sass",
+      "link": ""
+    },
+    {
+      "class": "project_4",
+      "title": "Weatherford ForSite",
+      "description": "Production optimization platform to enhance oil and gas producation",
+      "env": "Python | React | AWS | Storybook | Jest | Bootstrap | Sass",
+      "link": "",
+      "icon": "GiChickenOven"
+    },
+    {
+      "class": "project_5",
+      "title": "Jungle",
+      "description": "An E-commerce app for buying and selling",
+      "env": "Ruby on Rails | RSpec | Capybara | PostgreSQL | Bootstrap | Sas",
+      "link": ""
+    }
+  ]
+}

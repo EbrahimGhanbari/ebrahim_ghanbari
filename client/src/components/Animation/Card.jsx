@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { GiChickenOven, GiOilPump } from "react-icons/gi";
-import { FaShoppingCart } from "react-icons/fa";
+import { GrOptimize } from "react-icons/gr";
 import { AiOutlineSchedule } from "react-icons/ai";
 
 import "./Card.scss";
@@ -46,7 +46,7 @@ export default function (props) {
               : { display: "none" }
           }
         />
-        <FaShoppingCart
+        <GrOptimize
           className="icon_1"
           style={
             project.class === "project_4"
