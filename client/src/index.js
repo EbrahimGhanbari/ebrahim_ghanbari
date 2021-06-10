@@ -9,6 +9,7 @@ import App from "./App";
 
 const routing = (
     <App />
+
 );
 
 ReactDOM.render(routing, document.getElementById('root'))

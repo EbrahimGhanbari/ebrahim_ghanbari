@@ -17,7 +17,7 @@ App.use(Logger("dev"));
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
-  "http://localhost:80",
+  "http://localhost",
   "ebrahim-ghanbari.ca",
   "http://www.ebrahim-ghanbari.ca"
 ];
@@ -49,6 +49,7 @@ App.get("/contact", (req, res) => {
 });
 
 App.post("/contact", async (req, res) => {
+  console.log('iofsiedfjlksjfklsdjflksdjflksdjflksdjf')
   const email = req.body;
   const plainTextMsg = `
   Name: ${email.name} ** 

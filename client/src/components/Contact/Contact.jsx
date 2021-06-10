@@ -29,7 +29,7 @@ export default function (props) {
 
     axios({
       method: "POST",
-      url: "http://localhost:8080/contact",
+      url: "http://localhost:80/contact",
       data: contact,
     }).then((response) => {
       if (response.data.status === "success") {

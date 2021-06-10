@@ -3,6 +3,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   dl {
-    width: 150px;
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .skills {
+    justify-content: start;
+    dl {
+      width: 250px;
+    }
   }
 }

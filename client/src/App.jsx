@@ -69,12 +69,12 @@ export default function () {
             <DividerBlock height={"60vh"} />
             <DividerBlock height={"100vh"} onEnterViewport={showProject} />
           </div>
-        )} */}
+        )}
 
         {display.resume ? (
-          <>
-            <Resume />
-            <DividerBlock height={spaceResumeAbout} />
+          <> */}
+        <Resume />
+        {/* <DividerBlock height={spaceResumeAbout} />
           </>
         ) : (
           <div id="resume">
@@ -84,7 +84,7 @@ export default function () {
         )}
         {display.about ? (
           <>
-            {/* <About /> */}
+            <About />
             <DividerBlock height={"120vh"} />
           </>
         ) : (
@@ -97,7 +97,7 @@ export default function () {
         <Contact />
         <DividerBlock height={"120vh"} />
 
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
   );

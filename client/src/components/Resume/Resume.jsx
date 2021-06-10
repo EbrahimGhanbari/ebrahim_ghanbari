@@ -23,10 +23,10 @@ export default function (props) {
             </div>
             <div className="resume-right">
               <Educations />
+              <Skills />
             </div>
           </section>
           <Courses />
-          {/* <Skills /> */}
           <a href="cv.pdf" target="_blank">
             <button id="download_resume" className="coolBeans">
               Download Resume
