@@ -6,8 +6,9 @@ export default function () {
   return (
     <div>
       <h2 className="resume_subtitle">Skills</h2>
-      <div>
+      <div className="skills">
         <dl>
+          <dt> </dt>
           <dt>ReactJS </dt>
           <dt>Javascript </dt>
           <dt>Node JS </dt>

@@ -84,7 +84,7 @@ export default function () {
         )}
         {display.about ? (
           <>
-            <About />
+            {/* <About /> */}
             <DividerBlock height={"120vh"} />
           </>
         ) : (

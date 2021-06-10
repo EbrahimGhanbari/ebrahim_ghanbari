@@ -17,6 +17,9 @@ App.use(Logger("dev"));
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
+  "http://localhost:80",
+  "ebrahim-ghanbari.ca",
+  "http://www.ebrahim-ghanbari.ca"
 ];
 const corsOptions = {
   origin: function (origin, callback) {
@@ -86,7 +89,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 App.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(

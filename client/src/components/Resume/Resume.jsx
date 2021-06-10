@@ -26,7 +26,7 @@ export default function (props) {
             </div>
           </section>
           <Courses />
-          <Skills />
+          {/* <Skills /> */}
           <a href="cv.pdf" target="_blank">
             <button id="download_resume" className="coolBeans">
               Download Resume
