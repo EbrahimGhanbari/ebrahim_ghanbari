@@ -57,8 +57,17 @@
       "env": "Express | Node.js | React | Storybook | Jest | Cypress | PostgreSQL | Bootstrap | Sass",
       "link": ""
     },
+
     {
       "class": "project_4",
+      "title": "Weatherford Froce Analysis",
+      "description": "A software to calculate torque and drag",
+      "env": "Python | tkinter",
+      "link": "",
+      "icon": "GiChickenOven"
+    },
+    {
+      "class": "project_5",
       "title": "Weatherford ForSite",
       "description": "Production optimization platform to enhance oil and gas producation",
       "env": "Python | React | AWS | Storybook | Jest | Bootstrap | Sass",
@@ -66,7 +75,7 @@
       "icon": "GiChickenOven"
     },
     {
-      "class": "project_5",
+      "class": "project_6",
       "title": "Jungle",
       "description": "An E-commerce app for buying and selling",
       "env": "Ruby on Rails | RSpec | Capybara | PostgreSQL | Bootstrap | Sas",
