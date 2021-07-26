@@ -52,10 +52,11 @@
     },
     {
       "class": "project_3",
-      "title": "Interview Scheduler",
-      "description": "An app that allows users to book and cancel interviews",
-      "env": "Express | Node.js | React | Storybook | Jest | Cypress | PostgreSQL | Bootstrap | Sass",
-      "link": ""
+      "title": "Weatherford ForSite",
+      "description": "Production optimization platform to enhance oil and gas producation",
+      "env": "Python | React | AWS | Storybook | Jest | Bootstrap | Sass",
+      "link": "",
+      "icon": "GiChickenOven"
     },
 
     {
@@ -68,11 +69,10 @@
     },
     {
       "class": "project_5",
-      "title": "Weatherford ForSite",
-      "description": "Production optimization platform to enhance oil and gas producation",
-      "env": "Python | React | AWS | Storybook | Jest | Bootstrap | Sass",
-      "link": "",
-      "icon": "GiChickenOven"
+      "title": "Interview Scheduler",
+      "description": "An app that allows users to book and cancel interviews",
+      "env": "Express | Node.js | React | Storybook | Jest | Cypress | PostgreSQL | Bootstrap | Sass",
+      "link": ""
     },
     {
       "class": "project_6",
